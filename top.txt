@@ -1,0 +1,855 @@
+2021-03-16 15:33:00
+Tasks: 633 total,   2 running, 626 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7134052k used,   670548k free,   108892k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3608612k cached
+400%cpu 128%user   5%nice 135%sys 120%idle   3%iow   8%irq   3%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+  964 system       18  -2 4.4G 172M 122M S 45.0   2.2  28:29.88 system_server
+ 2698 system       20   0 4.2G  84M  40M S 37.5   1.1  78:27.24 com.chj.voicerecognize.captureservice
+14104 root         20   0  10M 2.4M 1.4M R 27.5   0.0   0:00.13 top -b -m 30
+  865 system       20   0  51M  14M 5.6M S 25.0   0.1  31:04.27 chj_datacollector
+  631 vehicle_network 20 0 175M 73M  20M S 25.0   0.9  64:36.07 vendor.ts.hardware.automotive.vehicle@2.0-service
+  852 mediacodec   20   0 133M  33M  26M S 12.5   0.4  19:03.98 media.codec hw/android.hardware.media.omx@1.0-service
+ 2711 system       10 -10 4.2G 171M  41M S 10.0   2.2  12:42.75 com.apical.dvr
+ 1402 system       20   0 4.2G  74M  45M S 10.0   0.9  28:51.52 com.android.car
+ 3445 u0_a42       20   0 2.1G 274M  67M S  7.5   3.5  14:52.31 com.tencent.wecarspeech
+ 3347 u0_a27       20   0 1.7G 138M  90M S  7.5   1.8  15:52.20 com.chehejia.car.music.v3
+ 1538 system       20   0 4.2G 103M  50M S  5.0   1.3  16:34.89 com.chehejia.datacollection
+ 1072 system       10 -10  30M 3.6M 2.4M S  5.0   0.0  14:30.69 ais_server
+13705 root         20   0    0    0    0 S  2.5   0.0   0:00.24 [kworker/0:3]
+ 7062 root         20   0    0    0    0 S  2.5   0.0   0:02.50 [kworker/1:1]
+ 6731 root         20   0    0    0    0 S  2.5   0.0   0:06.76 [kworker/u8:2]
+ 4417 system       10 -10 4.2G 109M  75M S  2.5   1.4   3:34.89 com.chehejia.m01.launcher
+ 3688 u0_a76       20   0 1.6G  69M  53M S  2.5   0.9   0:59.89 com.tencent.wecarflow
+ 2881 u0_a21       20   0 1.9G 225M 147M S  2.5   2.9  12:54.26 com.autonavi.amapauto
+ 2727 u0_a10       20   0 4.1G  63M  46M S  2.5   0.8   2:00.61 com.chehejia.car.icharger
+ 2661 system        3 -17 4.3G  97M  40M S  2.5   1.2   3:15.07 com.chehejia.apacollector
+ 1607 system       16  -4 4.2G  63M  44M S  2.5   0.8   0:29.78 com.android.car:ChjCarDiagService
+ 1593 system       12  -8 4.1G  65M  42M S  2.5   0.8   7:48.30 com.android.car:ChjCarPowerService
+ 1497 u0_a30       20   0 4.2G 112M  75M S  2.5   1.4   3:19.76 com.android.systemui
+  987 logd         30  10  27M 4.2M 2.6M S  2.5   0.0   6:22.55 logsaver --save_all
+  864 root         20   0  29M 7.5M 4.7M S  2.5   0.0   5:11.04 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  853 system        3 -17 424M  12M 5.3M S  2.5   0.1  10:27.87 zadas_services
+  828 audioserver  20   0 101M  17M  10M S  2.5   0.2   2:46.86 audioserver
+  640 system       -2  -8 225M  25M  16M S  2.5   0.3  13:02.74 surfaceflinger
+  523 root         20   0  42M 5.4M 3.7M S  2.5   0.0   0:22.51 netd
+  491 logd         30  10  53M  33M 1.4M S  2.5   0.4   9:30.21 logd
+
+
+
+2021-03-16 15:33:03
+Tasks: 633 total,   1 running, 626 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7118124k used,   686476k free,   108896k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3604256k cached
+400%cpu 134%user  11%nice  89%sys 149%idle   0%iow  14%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 44.6   1.1  78:27.39 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 33.3   0.9  64:36.17 vendor.ts.hardware.automotive.vehicle@2.0-service
+  865 system       20   0  51M  14M 5.6M S 15.0   0.1  31:04.37 chj_datacollector
+ 1538 system       20   0 4.2G 104M  50M S 14.0   1.3  16:34.91 com.chehejia.datacollection
+ 1402 system       20   0 4.2G  74M  45M S 13.3   0.9  28:51.56 com.android.car
+ 3347 u0_a27       20   0 1.7G 138M  90M S 12.0   1.8  15:52.23 com.chehejia.car.music.v3
+  852 mediacodec   20   0 133M  33M  26M S  9.6   0.4  19:04.03 media.codec hw/android.hardware.media.omx@1.0-service
+ 3445 u0_a42       20   0 2.1G 274M  67M S  8.6   3.5  14:52.34 com.tencent.wecarspeech
+ 1072 system       10 -10  30M 3.6M 2.4M S  8.3   0.0  14:30.71 ais_server
+  964 system       18  -2 4.4G 172M 122M S  7.3   2.2  28:30.06 system_server
+ 2711 system       10 -10 4.2G 161M  41M S  5.3   2.1  12:42.79 com.apical.dvr
+  853 system        3 -17 424M  12M 5.3M S  5.3   0.1  10:27.88 zadas_services
+  491 logd         30  10  53M  33M 1.4M S  5.3   0.4   9:30.22 logd
+  820 system       20   0  12M 2.5M 1.4M S  4.3   0.0   4:25.91 cnss_diag -q -f
+14104 root         20   0  10M 2.7M 1.5M R  4.0   0.0   0:00.24 top -b -m 30
+ 1593 system       12  -8 4.1G  65M  42M S  4.0   0.8   7:48.31 com.android.car:ChjCarPowerService
+  987 logd         30  10  27M 4.2M 2.6M S  3.6   0.0   6:22.56 logsaver --save_all
+ 2881 u0_a21       20   0 1.9G 225M 147M S  3.3   2.9  12:54.27 com.autonavi.amapauto
+ 1497 u0_a30       20   0 4.2G 111M  74M S  2.6   1.4   3:19.77 com.android.systemui
+  640 system       -2  -8 225M  25M  16M S  2.6   0.3  13:02.75 surfaceflinger
+  611 system       -3  -8 141M 7.0M 4.5M S  2.6   0.0  11:31.42 android.hardware.graphics.composer@2.1-service
+  302 root         20   0    0    0    0 S  2.6   0.0   5:14.70 [trans_task]
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:11.05 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  367 root         RT   0    0    0    0 S  2.3   0.0   4:02.30 [cfinteractive]
+  828 audioserver  20   0 101M  17M  10M S  2.0   0.2   2:46.87 audioserver
+ 3136 u0_a76       20   0 1.7G 103M  59M S  1.6   1.3   4:41.48 com.tencent.wecarflow:coreService
+ 1333 system        4 -16 4.6G 239M 116M S  1.6   3.1   4:16.49 com.chehejia.car.svm
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.6   0.0   3:30.64 android.hardware.broadcastradio@2.0-service
+  601 audioserver  20   0  39M  12M 4.9M S  1.6   0.1   2:31.26 android.hardware.audio@2.0-service
+ 3455 u0_a51       20   0 1.7G  77M  55M S  1.3   1.0   4:02.85 com.tencent.wecarspeech.gaodeagent
+
+
+
+2021-03-16 15:33:06
+Tasks: 633 total,   1 running, 627 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7133296k used,   671304k free,   108904k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3610844k cached
+400%cpu 129%user   8%nice 102%sys 142%idle   1%iow  13%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 43.3   1.0  78:28.73 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 32.3   0.9  64:37.17 vendor.ts.hardware.automotive.vehicle@2.0-service
+  964 system       18  -2 4.4G 178M 125M S 20.0   2.3  28:30.28 system_server
+  852 mediacodec   20   0 133M  33M  26M S 14.3   0.4  19:04.32 media.codec hw/android.hardware.media.omx@1.0-service
+ 1402 system       20   0 4.2G  78M  45M S 13.0   1.0  28:51.96 com.android.car
+ 3347 u0_a27       20   0 1.7G 138M  90M S 12.3   1.8  15:52.59 com.chehejia.car.music.v3
+  865 system       20   0  51M  14M 5.6M S 10.3   0.1  31:04.82 chj_datacollector
+ 3445 u0_a42       20   0 2.1G 275M  67M S  9.6   3.6  14:52.60 com.tencent.wecarspeech
+ 2711 system       10 -10 4.2G 162M  41M S  9.3   2.1  12:42.95 com.apical.dvr
+ 1072 system       10 -10  30M 3.6M 2.4M S  8.0   0.0  14:30.96 ais_server
+ 1538 system       20   0 4.2G  86M  50M S  5.6   1.1  16:35.33 com.chehejia.datacollection
+  853 system        3 -17 424M  12M 5.3M S  4.6   0.1  10:28.04 zadas_services
+14104 root         20   0  11M 2.8M 1.5M R  4.3   0.0   0:00.36 top -b -m 30
+ 3136 u0_a76       20   0 1.7G 103M  59M S  4.0   1.3   4:41.53 com.tencent.wecarflow:coreService
+ 2881 u0_a21       20   0 1.9G 225M 147M S  3.6   2.9  12:54.37 com.autonavi.amapauto
+ 1593 system       12  -8 4.1G  66M  42M S  3.6   0.8   7:48.43 com.android.car:ChjCarPowerService
+  491 logd         30  10  53M  33M 1.4M S  3.3   0.4   9:30.38 logd
+  640 system       -2  -8 225M  25M  16M S  3.0   0.3  13:02.83 surfaceflinger
+  611 system       -3   0 141M 7.0M 4.5M S  3.0   0.0  11:31.50 android.hardware.graphics.composer@2.1-service
+  864 root         20   0  29M 7.5M 4.7M S  2.6   0.0   5:11.12 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  302 root         20   0    0    0    0 S  2.6   0.0   5:14.78 [trans_task]
+14795 u0_a34       20   0 1.7G  78M  55M S  2.3   1.0   2:57.70 com.tencent.wecarnavi
+ 1497 u0_a30       20   0 4.2G 111M  74M S  2.3   1.4   3:19.85 com.android.systemui
+  987 logd         30  10  27M 4.2M 2.6M S  2.3   0.0   6:22.67 logsaver --save_all
+  367 root         RT   0    0    0    0 S  2.3   0.0   4:02.37 [cfinteractive]
+ 3455 u0_a51       20   0 1.7G  77M  55M S  2.0   1.0   4:02.89 com.tencent.wecarspeech.gaodeagent
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:46.93 audioserver
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.6   0.0   3:30.69 android.hardware.broadcastradio@2.0-service
+  601 audioserver  20   0  39M  12M 4.9M S  1.6   0.1   2:31.31 android.hardware.audio@2.0-service
+ 1333 system        4 -16 4.6G 239M 116M S  1.3   3.1   4:16.54 com.chehejia.car.svm
+
+
+
+2021-03-16 15:33:09
+Tasks: 633 total,   2 running, 626 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7138816k used,   665784k free,   108908k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3617728k cached
+400%cpu 141%user  16%nice  85%sys 139%idle   2%iow  13%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 46.0   1.0  78:30.03 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 35.0   0.9  64:38.14 vendor.ts.hardware.automotive.vehicle@2.0-service
+ 1402 system       20   0 4.2G  81M  45M S 23.3   1.0  28:52.35 com.android.car
+  852 mediacodec   20   0 133M  33M  26M S 14.6   0.4  19:04.75 media.codec hw/android.hardware.media.omx@1.0-service
+  865 system       20   0  51M  14M 5.6M S 13.0   0.1  31:05.13 chj_datacollector
+ 3347 u0_a27       20   0 1.7G 139M  90M S 12.0   1.8  15:52.96 com.chehejia.car.music.v3
+ 2711 system       10 -10 4.2G 164M  41M S  9.3   2.1  12:43.23 com.apical.dvr
+ 3445 u0_a42       20   0 2.1G 275M  67M S  8.6   3.6  14:52.89 com.tencent.wecarspeech
+ 1072 system       10 -10  30M 3.6M 2.4M S  7.0   0.0  14:31.20 ais_server
+ 1538 system       20   0 4.2G  88M  50M S  6.0   1.1  16:35.50 com.chehejia.datacollection
+14104 root         20   0  11M 2.8M 1.5M R  4.6   0.0   0:00.49 top -b -m 30
+  964 system       18  -2 4.4G 181M 128M S  4.6   2.3  28:30.88 system_server
+  853 system        3 -17 424M  12M 5.3M S  4.6   0.1  10:28.18 zadas_services
+  491 logd         30  10  53M  33M 1.4M S  4.6   0.4   9:30.48 logd
+ 1593 system       12  -8 4.1G  66M  42M S  3.6   0.8   7:48.54 com.android.car:ChjCarPowerService
+ 2881 u0_a21       20   0 1.9G 225M 147M S  3.3   2.9  12:54.48 com.autonavi.amapauto
+  987 logd         30  10  27M 4.2M 2.6M R  3.0   0.0   6:22.74 logsaver --save_all
+  611 system       -3   0 141M 7.0M 4.5M S  3.0   0.0  11:31.59 android.hardware.graphics.composer@2.1-service
+ 1497 u0_a30       20   0 4.2G 112M  74M S  2.6   1.4   3:19.92 com.android.systemui
+  640 system       -2  -8 225M  25M  16M S  2.6   0.3  13:02.92 surfaceflinger
+  367 root         RT   0    0    0    0 S  2.6   0.0   4:02.44 [cfinteractive]
+  302 root         20   0    0    0    0 S  2.6   0.0   5:14.86 [trans_task]
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:11.20 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+ 3136 u0_a76       20   0 1.7G 101M  59M S  1.6   1.3   4:41.65 com.tencent.wecarflow:coreService
+ 2629 system       20   0 4.1G  64M  44M S  1.6   0.8   2:09.53 com.chehejia.iot.service
+ 1333 system        4 -16 4.6G 239M 116M S  1.6   3.1   4:16.58 com.chehejia.car.svm
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:46.98 audioserver
+  820 system       20   0  12M 2.5M 1.4M S  1.3   0.0   4:26.07 cnss_diag -q -f
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.3   0.0   3:30.74 android.hardware.broadcastradio@2.0-service
+  601 audioserver  20   0  39M  12M 4.9M S  1.3   0.1   2:31.36 android.hardware.audio@2.0-service
+
+
+
+2021-03-16 15:33:12
+Tasks: 634 total,   1 running, 628 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7144392k used,   660208k free,   108908k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3611588k cached
+400%cpu 145%user   9%nice 101%sys 127%idle   1%iow  13%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 44.6   1.0  78:31.41 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 31.3   0.9  64:39.19 vendor.ts.hardware.automotive.vehicle@2.0-service
+  964 system       18  -2 4.4G 186M 131M S 14.6   2.4  28:31.02 system_server
+ 1402 system       20   0 4.2G  71M  45M S 13.0   0.9  28:53.05 com.android.car
+ 3347 u0_a27       20   0 1.7G 139M  90M S 12.6   1.8  15:53.32 com.chehejia.car.music.v3
+  852 mediacodec   20   0 133M  32M  26M S 11.3   0.4  19:05.19 media.codec hw/android.hardware.media.omx@1.0-service
+ 3445 u0_a42       20   0 2.1G 275M  67M S 11.0   3.6  14:53.15 com.tencent.wecarspeech
+  865 system       20   0  51M  14M 5.6M S 10.3   0.1  31:05.52 chj_datacollector
+ 1538 system       20   0 4.2G  90M  50M S  8.6   1.1  16:35.68 com.chehejia.datacollection
+ 1072 system       10 -10  30M 3.6M 2.4M S  8.3   0.0  14:31.41 ais_server
+ 2711 system       10 -10 4.2G 166M  41M S  6.6   2.1  12:43.51 com.apical.dvr
+  491 logd         30  10  53M  33M 1.4M S  5.0   0.4   9:30.62 logd
+14104 root         20   0  11M 2.8M 1.5M R  4.6   0.0   0:00.63 top -b -m 30
+  853 system        3 -17 424M  12M 5.3M S  4.6   0.1  10:28.32 zadas_services
+  820 system       20   0  12M 2.5M 1.4M S  4.0   0.0   4:26.11 cnss_diag -q -f
+ 2881 u0_a21       20   0 1.9G 225M 147M S  3.6   2.9  12:54.58 com.autonavi.amapauto
+ 1593 system       12  -8 4.1G  66M  42M S  3.6   0.8   7:48.65 com.android.car:ChjCarPowerService
+  987 logd         30  10  27M 4.2M 2.6M S  3.6   0.0   6:22.83 logsaver --save_all
+ 1426 system       20   0 4.2G  72M  46M S  3.3   0.9   5:01.60 com.chehejia.log
+  640 system       -2  -8 225M  25M  16M S  3.0   0.3  13:03.00 surfaceflinger
+  611 system       -3  -8 141M 7.0M 4.5M S  3.0   0.0  11:31.68 android.hardware.graphics.composer@2.1-service
+  302 root         20   0    0    0    0 S  2.6   0.0   5:14.94 [trans_task]
+ 3136 u0_a76       20   0 1.7G 101M  59M S  2.3   1.3   4:41.70 com.tencent.wecarflow:coreService
+ 2629 system       20   0 4.1G  64M  44M S  2.3   0.8   2:09.58 com.chehejia.iot.service
+ 1497 u0_a30       20   0 4.2G 112M  75M S  2.3   1.4   3:20.00 com.android.systemui
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:11.27 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+14795 u0_a34       20   0 1.7G  77M  55M S  2.0   1.0   2:57.80 com.tencent.wecarnavi
+ 3455 u0_a51       20   0 1.7G  77M  55M S  2.0   1.0   4:02.98 com.tencent.wecarspeech.gaodeagent
+  828 audioserver  20   0 101M  17M  10M S  2.0   0.2   2:47.03 audioserver
+  367 root         RT   0    0    0    0 S  2.0   0.0   4:02.52 [cfinteractive]
+
+
+
+2021-03-16 15:33:15
+Tasks: 634 total,   2 running, 627 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7162544k used,   642056k free,   108908k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3618740k cached
+400%cpu 138%user  10%nice  97%sys 138%idle   0%iow  13%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  83M  40M S 41.6   1.0  78:32.75 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 30.6   0.9  64:40.13 vendor.ts.hardware.automotive.vehicle@2.0-service
+ 1426 system       20   0 4.2G  73M  46M S 18.3   0.9   5:01.70 com.chehejia.log
+  852 mediacodec   20   0 133M  32M  26M S 16.3   0.4  19:05.53 media.codec hw/android.hardware.media.omx@1.0-service
+ 1538 system       20   0 4.2G  95M  50M S 15.6   1.2  16:35.94 com.chehejia.datacollection
+  865 system       20   0  51M  14M 5.6M S 12.6   0.1  31:05.83 chj_datacollector
+ 1402 system       20   0 4.2G  73M  45M S 12.0   0.9  28:53.44 com.android.car
+ 2711 system       10 -10 4.2G 167M  41M S 11.0   2.1  12:43.71 com.apical.dvr
+ 3347 u0_a27       20   0 1.7G 139M  90M S 10.6   1.8  15:53.70 com.chehejia.car.music.v3
+ 3445 u0_a42       20   0 2.1G 274M  67M S  8.0   3.5  14:53.48 com.tencent.wecarspeech
+ 1072 system       10 -10  30M 3.6M 2.4M S  7.6   0.0  14:31.66 ais_server
+ 1593 system       12  -8 4.1G  66M  42M S  7.0   0.8   7:48.76 com.android.car:ChjCarPowerService
+14104 root         20   0  11M 2.9M 1.5M R  4.3   0.0   0:00.77 top -b -m 30
+  853 system        3 -17 424M  12M 5.3M S  4.3   0.1  10:28.46 zadas_services
+  964 system       18  -2 4.4G 191M 134M S  4.0   2.5  28:31.46 system_server
+  491 logd         30  10  53M  33M 1.4M S  3.3   0.4   9:30.77 logd
+ 2881 u0_a21       20   0 1.9G 226M 147M S  3.0   2.9  12:54.69 com.autonavi.amapauto
+  640 system       -2  -8 225M  25M  16M S  3.0   0.3  13:03.09 surfaceflinger
+  611 system       -3  -8 141M 7.0M 4.5M S  2.6   0.0  11:31.77 android.hardware.graphics.composer@2.1-service
+  367 root         RT   0    0    0    0 S  2.6   0.0   4:02.58 [cfinteractive]
+  302 root         20   0    0    0    0 S  2.6   0.0   5:15.02 [trans_task]
+ 1497 u0_a30       20   0 4.2G 112M  75M S  2.3   1.4   3:20.07 com.android.systemui
+  987 logd         30  10  27M 4.2M 2.6M S  2.3   0.0   6:22.94 logsaver --save_all
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:11.34 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:47.09 audioserver
+  601 audioserver  20   0  39M  12M 4.9M S  1.6   0.1   2:31.45 android.hardware.audio@2.0-service
+ 3455 u0_a51       20   0 1.7G  77M  55M S  1.3   1.0   4:03.04 com.tencent.wecarspeech.gaodeagent
+ 1333 system        4 -16 4.6G 239M 116M S  1.3   3.1   4:16.67 com.chehejia.car.svm
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.3   0.0   3:30.83 android.hardware.broadcastradio@2.0-service
+14795 u0_a34       20   0 1.7G  77M  55M S  1.0   1.0   2:57.86 com.tencent.wecarnavi
+
+
+
+2021-03-16 15:33:18
+Tasks: 634 total,   1 running, 628 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7110856k used,   693744k free,   108912k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3577264k cached
+400%cpu 137%user  12%nice 107%sys 127%idle   0%iow  14%irq   3%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  83M  40M S 42.6   1.0  78:34.00 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 31.0   0.9  64:41.05 vendor.ts.hardware.automotive.vehicle@2.0-service
+  964 system       18  -2 4.4G 194M 137M S 20.6   2.5  28:31.58 system_server
+ 1426 system       20   0 4.2G  73M  46M S 18.3   0.9   5:02.25 com.chehejia.log
+ 3347 u0_a27       20   0 1.7G 139M  90M S 13.3   1.8  15:54.02 com.chehejia.car.music.v3
+ 1402 system       20   0 4.2G  77M  45M S 12.3   1.0  28:53.80 com.android.car
+  865 system       20   0  51M  14M 5.6M S 11.3   0.1  31:06.21 chj_datacollector
+  852 mediacodec   20   0 133M  32M  26M S 11.0   0.4  19:06.02 media.codec hw/android.hardware.media.omx@1.0-service
+ 3445 u0_a42       20   0 2.1G 275M  67M S  8.6   3.6  14:53.72 com.tencent.wecarspeech
+ 1072 system       10 -10  30M 3.6M 2.4M S  7.0   0.0  14:31.89 ais_server
+ 2711 system       10 -10 4.2G 170M  41M S  6.0   2.2  12:44.04 com.apical.dvr
+ 1538 system       20   0 4.2G 103M  50M S  6.0   1.3  16:36.41 com.chehejia.datacollection
+  853 system        3 -17 424M  12M 5.3M S  4.6   0.1  10:28.59 zadas_services
+  491 logd         30  10  53M  33M 1.4M S  4.6   0.4   9:30.87 logd
+14104 root         20   0  11M 2.9M 1.5M R  4.3   0.0   0:00.90 top -b -m 30
+ 1593 system       12  -8 4.1G  62M  42M S  3.6   0.8   7:48.97 com.android.car:ChjCarPowerService
+ 2881 u0_a21       20   0 1.9G 226M 147M S  3.3   2.9  12:54.78 com.autonavi.amapauto
+  987 logd         30  10  27M 4.2M 2.6M S  3.3   0.0   6:23.01 logsaver --save_all
+  611 system       -3   0 141M 7.0M 4.5M S  3.0   0.0  11:31.85 android.hardware.graphics.composer@2.1-service
+  820 system       20   0  12M 2.5M 1.4M S  2.6   0.0   4:26.24 cnss_diag -q -f
+  640 system       -2  -8 225M  25M  16M S  2.6   0.3  13:03.18 surfaceflinger
+ 1497 u0_a30       20   0 4.2G 112M  75M S  2.3   1.4   3:20.14 com.android.systemui
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:11.41 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  302 root         20   0    0    0    0 S  2.3   0.0   5:15.10 [trans_task]
+  367 root         RT   0    0    0    0 S  2.0   0.0   4:02.66 [cfinteractive]
+ 4417 system       10 -10 4.2G 109M  75M S  1.6   1.4   3:34.96 com.chehejia.m01.launcher
+ 3136 u0_a76       20   0 1.7G 101M  59M S  1.6   1.3   4:41.80 com.tencent.wecarflow:coreService
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:47.14 audioserver
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.3   0.0   3:30.87 android.hardware.broadcastradio@2.0-service
+  601 audioserver  20   0  39M  12M 4.9M S  1.3   0.1   2:31.50 android.hardware.audio@2.0-service
+
+
+
+2021-03-16 15:33:21
+Tasks: 634 total,   2 running, 627 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7094448k used,   710152k free,   108912k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3584504k cached
+400%cpu 140%user  20%nice 109%sys 112%idle   0%iow  14%irq   5%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 42.3   1.0  78:35.28 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 32.3   0.9  64:41.98 vendor.ts.hardware.automotive.vehicle@2.0-service
+ 1402 system       20   0 4.2G  80M  45M S 20.0   1.0  28:54.17 com.android.car
+ 1426 system       20   0 4.2G  73M  46M S 19.0   0.9   5:02.80 com.chehejia.log
+  852 mediacodec   20   0 133M  32M  26M S 14.0   0.4  19:06.35 media.codec hw/android.hardware.media.omx@1.0-service
+  964 system       18  -2 4.3G 162M 116M S 13.3   2.1  28:32.20 system_server
+ 1538 system       20   0 4.2G 106M  50M S 12.3   1.3  16:36.59 com.chehejia.datacollection
+ 3347 u0_a27       20   0 1.7G 133M  90M S 12.0   1.7  15:54.42 com.chehejia.car.music.v3
+  865 system       20   0  51M  14M 5.6M S 11.6   0.1  31:06.55 chj_datacollector
+ 1072 system       10 -10  30M 3.6M 2.4M S  9.6   0.0  14:32.10 ais_server
+ 3445 u0_a42       20   0 2.1G 275M  67M S  9.0   3.6  14:53.98 com.tencent.wecarspeech
+ 2711 system       10 -10 4.2G 171M  41M S  9.0   2.2  12:44.22 com.apical.dvr
+  853 system        3 -17 424M  12M 5.3M S  4.6   0.1  10:28.73 zadas_services
+14104 root         20   0  11M 2.9M 1.5M R  4.3   0.0   0:01.03 top -b -m 30
+  491 logd         30  10  53M  33M 1.4M S  4.0   0.4   9:31.01 logd
+ 2881 u0_a21       20   0 1.9G 226M 147M S  3.3   2.9  12:54.88 com.autonavi.amapauto
+ 1593 system       12  -8 4.1G  62M  42M S  3.3   0.8   7:49.08 com.android.car:ChjCarPowerService
+  640 system       -2  -8 225M  25M  16M S  3.0   0.3  13:03.26 surfaceflinger
+  611 system       -3   0 141M 7.0M 4.5M S  3.0   0.0  11:31.94 android.hardware.graphics.composer@2.1-service
+  987 logd         30  10  27M 4.2M 2.6M S  2.6   0.0   6:23.11 logsaver --save_all
+  302 root         20   0    0    0    0 S  2.6   0.0   5:15.17 [trans_task]
+14795 u0_a34       20   0 1.7G  77M  55M S  2.3   1.0   2:57.91 com.tencent.wecarnavi
+ 1497 u0_a30       20   0 4.2G 112M  75M S  2.3   1.4   3:20.21 com.android.systemui
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:11.48 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  820 system       20   0  12M 2.5M 1.4M S  2.3   0.0   4:26.32 cnss_diag -q -f
+  367 root         RT   0    0    0    0 S  2.3   0.0   4:02.72 [cfinteractive]
+ 3455 u0_a51       20   0 1.7G  78M  55M S  1.6   1.0   4:03.11 com.tencent.wecarspeech.gaodeagent
+ 1333 system        4 -16 4.6G 239M 116M S  1.6   3.1   4:16.74 com.chehejia.car.svm
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:47.19 audioserver
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.6   0.0   3:30.91 android.hardware.broadcastradio@2.0-service
+
+
+
+2021-03-16 15:33:24
+Tasks: 634 total,   1 running, 628 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7109988k used,   694612k free,   108916k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3591756k cached
+400%cpu 148%user   3%nice  92%sys 139%idle   0%iow  13%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 42.3   1.1  78:36.55 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 31.0   0.9  64:42.95 vendor.ts.hardware.automotive.vehicle@2.0-service
+ 1426 system       20   0 4.2G  73M  46M S 19.3   0.9   5:03.37 com.chehejia.log
+  852 mediacodec   20   0 133M  32M  26M S 16.6   0.4  19:06.77 media.codec hw/android.hardware.media.omx@1.0-service
+ 1402 system       20   0 4.2G  72M  45M S 12.3   0.9  28:54.77 com.android.car
+  865 system       20   0  51M  14M 5.6M S 12.0   0.1  31:06.90 chj_datacollector
+ 3347 u0_a27       20   0 1.7G 133M  90M S 11.3   1.7  15:54.78 com.chehejia.car.music.v3
+ 2711 system       10 -10 4.2G 173M  41M S 11.0   2.2  12:44.49 com.apical.dvr
+ 3445 u0_a42       20   0 2.1G 275M  67M S  9.6   3.6  14:54.25 com.tencent.wecarspeech
+ 1538 system       20   0 4.2G  84M  50M S  6.3   1.1  16:36.96 com.chehejia.datacollection
+ 1072 system       10 -10  30M 3.6M 2.4M S  6.3   0.0  14:32.39 ais_server
+  853 system        3 -17 424M  12M 5.3M S  4.6   0.1  10:28.87 zadas_services
+  964 system       18  -2 4.4G 167M 118M S  4.3   2.1  28:32.60 system_server
+14104 root         20   0  11M 2.9M 1.5M R  4.0   0.0   0:01.16 top -b -m 30
+  491 logd         30  10  53M  33M 1.4M S  4.0   0.4   9:31.13 logd
+ 1593 system       12  -8 4.1G  62M  42M S  3.6   0.8   7:49.18 com.android.car:ChjCarPowerService
+ 2881 u0_a21       20   0 1.9G 226M 147M S  3.3   2.9  12:54.98 com.autonavi.amapauto
+  987 logd         30  10  27M 4.2M 2.6M S  2.6   0.0   6:23.19 logsaver --save_all
+  640 system       -2  -8 225M  25M  16M S  2.6   0.3  13:03.35 surfaceflinger
+  611 system       -3  -8 141M 7.0M 4.5M S  2.6   0.0  11:32.03 android.hardware.graphics.composer@2.1-service
+  302 root         20   0    0    0    0 S  2.6   0.0   5:15.25 [trans_task]
+ 1497 u0_a30       20   0 4.2G 112M  75M S  2.3   1.4   3:20.28 com.android.systemui
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:11.55 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  367 root         RT   0    0    0    0 S  2.3   0.0   4:02.79 [cfinteractive]
+ 3136 u0_a76       20   0 1.7G 102M  59M S  2.0   1.3   4:41.89 com.tencent.wecarflow:coreService
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:47.24 audioserver
+ 3455 u0_a51       20   0 1.7G  78M  55M S  1.3   1.0   4:03.16 com.tencent.wecarspeech.gaodeagent
+ 2629 system       20   0 4.1G  63M  44M S  1.3   0.8   2:09.70 com.chehejia.iot.service
+ 1333 system        4 -16 4.6G 240M 116M S  1.3   3.1   4:16.79 com.chehejia.car.svm
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.3   0.0   3:30.96 android.hardware.broadcastradio@2.0-service
+
+
+
+2021-03-16 15:33:27
+Tasks: 633 total,   1 running, 627 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7170380k used,   634220k free,   108924k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3599288k cached
+400%cpu 152%user  10%nice 113%sys 107%idle   0%iow  15%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 45.6   1.1  78:37.82 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 32.0   0.9  64:43.88 vendor.ts.hardware.automotive.vehicle@2.0-service
+  964 system       18  -2 4.4G 170M 121M S 23.0   2.2  28:32.73 system_server
+ 1426 system       20   0 4.2G  73M  46M S 19.6   0.9   5:03.95 com.chehejia.log
+ 1402 system       20   0 4.2G  74M  45M S 13.3   0.9  28:55.14 com.android.car
+ 3347 u0_a27       20   0 1.7G 133M  90M S 11.3   1.7  15:55.12 com.chehejia.car.music.v3
+  852 mediacodec   20   0 133M  32M  26M S 10.6   0.4  19:07.27 media.codec hw/android.hardware.media.omx@1.0-service
+  865 system       20   0  51M  14M 5.6M S 10.0   0.1  31:07.26 chj_datacollector
+ 3445 u0_a42       20   0 2.1G 274M  67M S  8.3   3.5  14:54.54 com.tencent.wecarspeech
+ 1072 system       10 -10  30M 3.6M 2.4M S  7.6   0.0  14:32.58 ais_server
+  491 logd         30  10  53M  33M 1.4M S  7.3   0.4   9:31.25 logd
+ 1538 system       20   0 4.2G  86M  50M S  6.3   1.1  16:37.15 com.chehejia.datacollection
+ 2711 system       10 -10 4.2G 175M  41M S  6.0   2.2  12:44.82 com.apical.dvr
+14104 root         20   0  11M 2.9M 1.5M R  5.6   0.0   0:01.28 top -b -m 30
+  853 system        3 -17 424M  12M 5.3M S  4.3   0.1  10:29.01 zadas_services
+ 2881 u0_a21       20   0 1.9G 226M 147M S  4.0   2.9  12:55.08 com.autonavi.amapauto
+ 1593 system       12  -8 4.1G  62M  42M S  3.6   0.8   7:49.29 com.android.car:ChjCarPowerService
+  820 system       20   0  12M 2.5M 1.4M S  3.6   0.0   4:26.40 cnss_diag -q -f
+  987 logd         30  10  27M 4.2M 2.6M S  3.3   0.0   6:23.27 logsaver --save_all
+  640 system       -2  -8 225M  25M  16M S  3.0   0.3  13:03.43 surfaceflinger
+  611 system       -3  -8 141M 7.0M 4.5M S  3.0   0.0  11:32.11 android.hardware.graphics.composer@2.1-service
+ 1497 u0_a30       20   0 4.2G 112M  75M S  2.6   1.4   3:20.35 com.android.systemui
+  367 root         RT   0    0    0    0 S  2.6   0.0   4:02.86 [cfinteractive]
+ 3136 u0_a76       20   0 1.7G 102M  59M S  2.3   1.3   4:41.95 com.tencent.wecarflow:coreService
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:11.62 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  302 root         20   0    0    0    0 S  2.3   0.0   5:15.33 [trans_task]
+  828 audioserver  20   0 101M  17M  10M S  2.0   0.2   2:47.29 audioserver
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.6   0.0   3:31.00 android.hardware.broadcastradio@2.0-service
+  601 audioserver  20   0  39M  12M 4.9M S  1.6   0.1   2:31.63 android.hardware.audio@2.0-service
+  492 system       20   0  10M 2.2M 1.5M S  1.6   0.0   0:15.84 servicemanager
+
+
+
+2021-03-16 15:33:30
+Tasks: 633 total,   1 running, 627 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7184712k used,   619888k free,   108928k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3606476k cached
+400%cpu 132%user   6%nice 100%sys 141%idle   0%iow  16%irq   5%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  83M  40M S 41.6   1.0  78:39.19 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 29.6   0.9  64:44.84 vendor.ts.hardware.automotive.vehicle@2.0-service
+ 1426 system       20   0 4.2G  73M  46M S 19.3   0.9   5:04.54 com.chehejia.log
+  852 mediacodec   20   0 133M  32M  26M S 14.6   0.4  19:07.59 media.codec hw/android.hardware.media.omx@1.0-service
+ 3347 u0_a27       20   0 1.7G 133M  90M S 12.0   1.7  15:55.46 com.chehejia.car.music.v3
+  865 system       20   0  51M  14M 5.6M S 12.0   0.1  31:07.56 chj_datacollector
+ 1402 system       20   0 4.2G  77M  45M S 11.6   1.0  28:55.54 com.android.car
+ 2711 system       10 -10 4.2G 177M  41M S  9.6   2.3  12:45.00 com.apical.dvr
+ 3445 u0_a42       20   0 2.1G 274M  67M S  9.3   3.5  14:54.79 com.tencent.wecarspeech
+ 1072 system       10 -10  30M 3.6M 2.4M S  7.3   0.0  14:32.81 ais_server
+  964 system       18  -2 4.4G 175M 124M S  5.6   2.3  28:33.42 system_server
+ 1538 system       20   0 4.2G  89M  50M S  5.3   1.1  16:37.34 com.chehejia.datacollection
+14104 root         20   0  11M 2.9M 1.5M R  4.3   0.0   0:01.45 top -b -m 30
+  853 system        3 -17 424M  12M 5.3M S  4.3   0.1  10:29.14 zadas_services
+  491 logd         30  10  53M  33M 1.4M S  4.0   0.4   9:31.47 logd
+  640 system       -2  -8 225M  25M  16M S  3.6   0.3  13:03.52 surfaceflinger
+ 2881 u0_a21       20   0 1.9G 224M 147M S  3.3   2.9  12:55.20 com.autonavi.amapauto
+ 1593 system       12  -8 4.1G  63M  42M S  3.3   0.8   7:49.40 com.android.car:ChjCarPowerService
+ 1497 u0_a30       20   0 4.2G 112M  75M S  3.0   1.4   3:20.43 com.android.systemui
+  611 system       -3  -8 141M 7.0M 4.5M S  3.0   0.0  11:32.20 android.hardware.graphics.composer@2.1-service
+ 3455 u0_a51       20   0 1.7G  78M  55M S  2.6   1.0   4:03.23 com.tencent.wecarspeech.gaodeagent
+  987 logd         30  10  27M 4.2M 2.6M S  2.6   0.0   6:23.37 logsaver --save_all
+  302 root         20   0    0    0    0 S  2.6   0.0   5:15.40 [trans_task]
+14795 u0_a34       20   0 1.7G  78M  55M S  2.3   1.0   2:58.03 com.tencent.wecarnavi
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:11.69 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  367 root         RT   0    0    0    0 S  2.3   0.0   4:02.94 [cfinteractive]
+ 3136 u0_a76       20   0 1.7G 103M  59M S  1.6   1.3   4:42.02 com.tencent.wecarflow:coreService
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:47.35 audioserver
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.6   0.0   3:31.05 android.hardware.broadcastradio@2.0-service
+  601 audioserver  20   0  39M  12M 4.9M S  1.6   0.1   2:31.68 android.hardware.audio@2.0-service
+
+
+
+2021-03-16 15:33:33
+Tasks: 633 total,   1 running, 625 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7190060k used,   614540k free,   108936k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3613784k cached
+400%cpu 153%user  14%nice 107%sys 105%idle   0%iow  16%irq   5%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  83M  40M S 41.3   1.0  78:40.44 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 30.6   0.9  64:45.73 vendor.ts.hardware.automotive.vehicle@2.0-service
+ 1402 system       20   0 4.2G  81M  45M S 21.3   1.0  28:55.89 com.android.car
+    1 root         20   0  21M 3.4M 1.3M S 20.0   0.0   0:24.93 init
+ 1426 system       20   0 4.2G  73M  46M S 17.6   0.9   5:05.12 com.chehejia.log
+  852 mediacodec   20   0 133M  32M  26M S 14.0   0.4  19:08.03 media.codec hw/android.hardware.media.omx@1.0-service
+  964 system       18  -2 4.4G 179M 127M S 13.0   2.3  28:33.59 system_server
+  865 system       20   0  51M  14M 5.6M S 12.3   0.1  31:07.92 chj_datacollector
+ 3347 u0_a27       20   0 1.7G 133M  90M S 11.6   1.7  15:55.82 com.chehejia.car.music.v3
+ 2711 system       10 -10 4.2G 178M  41M S  9.3   2.3  12:45.29 com.apical.dvr
+ 3445 u0_a42       20   0 2.1G 275M  67M S  8.6   3.6  14:55.07 com.tencent.wecarspeech
+ 1072 system       10 -10  30M 3.6M 2.4M S  8.6   0.0  14:33.03 ais_server
+  491 logd         30  10  53M  33M 1.4M S  6.3   0.4   9:31.59 logd
+ 1538 system       20   0 4.2G  91M  50M S  6.0   1.1  16:37.50 com.chehejia.datacollection
+  853 system        3 -17 424M  12M 5.3M S  4.3   0.1  10:29.27 zadas_services
+14104 root         20   0  11M 2.9M 1.5M R  4.0   0.0   0:01.58 top -b -m 30
+ 1593 system       12  -8 4.1G  63M  42M S  3.6   0.8   7:49.50 com.android.car:ChjCarPowerService
+ 2881 u0_a21       20   0 1.9G 224M 147M S  3.3   2.9  12:55.30 com.autonavi.amapauto
+  640 system       -2  -8 225M  25M  16M S  3.3   0.3  13:03.63 surfaceflinger
+  987 logd         30  10  27M 4.2M 2.6M S  3.0   0.0   6:23.45 logsaver --save_all
+  611 system       -3  -8 141M 7.0M 4.5M S  3.0   0.0  11:32.29 android.hardware.graphics.composer@2.1-service
+ 1497 u0_a30       20   0 4.2G 112M  75M S  2.6   1.4   3:20.52 com.android.systemui
+  302 root         20   0    0    0    0 D  2.6   0.0   5:15.48 [trans_task]
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:11.76 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+ 3688 u0_a76       20   0 1.6G  69M  53M S  2.0   0.9   0:59.99 com.tencent.wecarflow
+ 3136 u0_a76       20   0 1.7G 103M  59M S  1.6   1.3   4:42.07 com.tencent.wecarflow:coreService
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:47.40 audioserver
+  601 audioserver  20   0  39M  12M 4.9M S  1.6   0.1   2:31.73 android.hardware.audio@2.0-service
+  367 root         RT   0    0    0    0 S  1.6   0.0   4:03.01 [cfinteractive]
+ 3455 u0_a51       20   0 1.7G  76M  55M S  1.3   1.0   4:03.31 com.tencent.wecarspeech.gaodeagent
+
+
+
+2021-03-16 15:33:36
+Tasks: 634 total,   1 running, 626 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7209224k used,   595376k free,   108936k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3621412k cached
+400%cpu 140%user   4%nice  97%sys 138%idle   1%iow  17%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 40.6   1.1  78:41.68 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 32.0   0.9  64:46.65 vendor.ts.hardware.automotive.vehicle@2.0-service
+ 1426 system       20   0 4.2G  73M  46M S 20.0   0.9   5:05.65 com.chehejia.log
+ 3347 u0_a27       20   0 1.7G 133M  90M S 12.3   1.7  15:56.17 com.chehejia.car.music.v3
+ 1402 system       20   0 4.2G  74M  45M S 12.3   0.9  28:56.53 com.android.car
+  865 system       20   0  51M  14M 5.6M S 12.0   0.1  31:08.29 chj_datacollector
+  852 mediacodec   20   0 133M  32M  26M S 10.3   0.4  19:08.45 media.codec hw/android.hardware.media.omx@1.0-service
+ 1072 system       10 -10  30M 3.6M 2.4M S  9.6   0.0  14:33.29 ais_server
+ 3445 u0_a42       20   0 2.1G 275M  67M S  9.0   3.6  14:55.33 com.tencent.wecarspeech
+ 1538 system       20   0 4.2G  94M  50M S  7.3   1.2  16:37.68 com.chehejia.datacollection
+  964 system       18  -2 4.4G 183M 130M S  6.6   2.4  28:33.98 system_server
+ 2711 system       10 -10 4.2G 180M  41M S  6.0   2.3  12:45.57 com.apical.dvr
+  853 system        3 -17 424M  12M 5.3M S  4.6   0.1  10:29.40 zadas_services
+  491 logd         30  10  53M  33M 1.4M S  4.6   0.4   9:31.78 logd
+14104 root         20   0  11M 2.9M 1.5M R  4.3   0.0   0:01.70 top -b -m 30
+  820 system       20   0  12M 2.5M 1.4M S  4.0   0.0   4:26.58 cnss_diag -q -f
+ 2881 u0_a21       20   0 1.9G 224M 147M S  3.6   2.9  12:55.40 com.autonavi.amapauto
+ 1593 system       12  -8 4.1G  63M  42M S  3.6   0.8   7:49.61 com.android.car:ChjCarPowerService
+  640 system       -2  -8 225M  25M  16M S  3.3   0.3  13:03.73 surfaceflinger
+ 1497 u0_a30       20   0 4.2G 112M  75M S  3.0   1.4   3:20.60 com.android.systemui
+  987 logd         30  10  27M 4.1M 2.6M S  3.0   0.0   6:23.54 logsaver --save_all
+  302 root         20   0    0    0    0 S  3.0   0.0   5:15.56 [trans_task]
+  864 root         20   0  29M 7.5M 4.7M S  2.6   0.0   5:11.83 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  611 system       -3  -8 141M 7.0M 4.5M S  2.6   0.0  11:32.38 android.hardware.graphics.composer@2.1-service
+  367 root         RT   0    0    0    0 S  2.3   0.0   4:03.06 [cfinteractive]
+  828 audioserver  20   0 101M  17M  10M S  2.0   0.2   2:47.45 audioserver
+ 3455 u0_a51       20   0 1.7G  77M  55M S  1.6   1.0   4:03.35 com.tencent.wecarspeech.gaodeagent
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.6   0.0   3:31.14 android.hardware.broadcastradio@2.0-service
+14795 u0_a34       20   0 1.7G  78M  55M S  1.3   1.0   2:58.12 com.tencent.wecarnavi
+ 3136 u0_a76       20   0 1.7G 103M  59M S  1.3   1.3   4:42.12 com.tencent.wecarflow:coreService
+
+
+
+2021-03-16 15:33:39
+Tasks: 634 total,   3 running, 624 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7219704k used,   584896k free,   108936k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3628804k cached
+400%cpu 160%user   7%nice  97%sys 113%idle   1%iow  17%irq   5%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 43.6   1.1  78:42.90 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 32.3   0.9  64:47.61 vendor.ts.hardware.automotive.vehicle@2.0-service
+  865 system       20   0  51M  14M 5.6M S 20.3   0.1  31:08.65 chj_datacollector
+ 1426 system       20   0 4.2G  73M  46M S 18.3   0.9   5:06.25 com.chehejia.log
+  852 mediacodec   20   0 133M  32M  26M S 17.3   0.4  19:08.76 media.codec hw/android.hardware.media.omx@1.0-service
+ 1402 system       20   0 4.2G  74M  45M S 13.3   0.9  28:56.90 com.android.car
+ 3347 u0_a27       20   0 1.7G 134M  90M S 12.3   1.7  15:56.54 com.chehejia.car.music.v3
+ 2711 system       10 -10 4.2G 181M  41M S 12.0   2.3  12:45.75 com.apical.dvr
+  964 system       18  -2 4.4G 189M 133M S 12.0   2.4  28:34.18 system_server
+ 3445 u0_a42       20   0 2.1G 275M  67M S  9.6   3.6  14:55.60 com.tencent.wecarspeech
+ 1072 system       10 -10  30M 3.6M 2.4M S  6.6   0.0  14:33.58 ais_server
+14104 root         20   0  11M 2.9M 1.5M R  5.3   0.0   0:01.83 top -b -m 30
+ 1538 system       20   0 4.2G  98M  50M S  5.3   1.2  16:37.90 com.chehejia.datacollection
+  853 system        3 -17 424M  12M 5.3M S  4.6   0.1  10:29.54 zadas_services
+ 3136 u0_a76       20   0 1.7G 104M  59M S  4.0   1.3   4:42.16 com.tencent.wecarflow:coreService
+  491 logd         30  10  53M  33M 1.4M S  4.0   0.4   9:31.92 logd
+ 1593 system       12  -8 4.1G  64M  42M S  3.6   0.8   7:49.72 com.android.car:ChjCarPowerService
+  640 system       -2  -8 225M  25M  16M S  3.6   0.3  13:03.83 surfaceflinger
+ 2881 u0_a21       20   0 1.9G 225M 147M S  3.3   2.9  12:55.51 com.autonavi.amapauto
+  611 system       -3  -8 141M 7.0M 4.5M S  3.3   0.0  11:32.46 android.hardware.graphics.composer@2.1-service
+ 1497 u0_a30       20   0 4.2G 112M  75M S  3.0   1.4   3:20.69 com.android.systemui
+  987 logd         30  10  27M 4.1M 2.6M S  3.0   0.0   6:23.63 logsaver --save_all
+  302 root         20   0    0    0    0 S  2.6   0.0   5:15.65 [trans_task]
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:11.91 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  367 root         RT   0    0    0    0 S  2.3   0.0   4:03.13 [cfinteractive]
+14795 u0_a34       20   0 1.7G  78M  55M S  2.0   1.0   2:58.16 com.tencent.wecarnavi
+ 1333 system        4 -16 4.6G 240M 116M S  1.6   3.1   4:16.99 com.chehejia.car.svm
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:47.51 audioserver
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.6   0.0   3:31.19 android.hardware.broadcastradio@2.0-service
+  601 audioserver  20   0  39M  12M 4.9M S  1.6   0.1   2:31.82 android.hardware.audio@2.0-service
+
+
+
+2021-03-16 15:33:42
+Tasks: 634 total,   1 running, 628 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7180160k used,   624440k free,   108992k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3612912k cached
+400%cpu 150%user  10%nice 103%sys 115%idle   1%iow  17%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  83M  40M S 42.6   1.0  78:44.21 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 30.6   0.9  64:48.58 vendor.ts.hardware.automotive.vehicle@2.0-service
+  865 system       20   0  51M  14M 5.6M S 22.6   0.1  31:09.26 chj_datacollector
+  964 system       18  -2 4.4G 192M 136M S 20.0   2.5  28:34.54 system_server
+ 1426 system       20   0 4.2G  73M  46M S 17.6   0.9   5:06.80 com.chehejia.log
+ 1402 system       20   0 4.2G  77M  45M S 12.6   1.0  28:57.30 com.android.car
+  852 mediacodec   20   0 133M  32M  26M S 11.6   0.4  19:09.28 media.codec hw/android.hardware.media.omx@1.0-service
+ 3347 u0_a27       20   0 1.7G 134M  90M S 11.3   1.7  15:56.91 com.chehejia.car.music.v3
+ 1072 system       10 -10  30M 3.6M 2.4M S  9.6   0.0  14:33.78 ais_server
+ 3445 u0_a42       20   0 2.1G 274M  67M S  8.6   3.5  14:55.89 com.tencent.wecarspeech
+ 2711 system       10 -10 4.2G 184M  41M S  8.6   2.4  12:46.11 com.apical.dvr
+ 1538 system       20   0 4.2G 100M  50M S  7.0   1.3  16:38.06 com.chehejia.datacollection
+ 2881 u0_a21       20   0 1.9G 225M 147M S  5.3   2.9  12:55.61 com.autonavi.amapauto
+  491 logd         30  10  53M  33M 1.4M S  5.3   0.4   9:32.04 logd
+  853 system        3 -17 424M  12M 5.3M S  5.0   0.1  10:29.68 zadas_services
+14104 root         20   0  11M 2.9M 1.5M R  4.6   0.0   0:01.99 top -b -m 30
+ 1593 system       12  -8 4.1G  64M  42M S  3.6   0.8   7:49.83 com.android.car:ChjCarPowerService
+  987 logd         30  10  27M 4.1M 2.6M S  3.3   0.0   6:23.72 logsaver --save_all
+  640 system       -2  -8 225M  25M  16M S  3.0   0.3  13:03.94 surfaceflinger
+ 1497 u0_a30       20   0 4.2G 112M  75M S  2.6   1.4   3:20.78 com.android.systemui
+  820 system       20   0  12M 2.5M 1.4M S  2.6   0.0   4:26.71 cnss_diag -q -f
+  611 system       -3  -8 141M 7.0M 4.5M S  2.6   0.0  11:32.56 android.hardware.graphics.composer@2.1-service
+  302 root         20   0    0    0    0 S  2.6   0.0   5:15.73 [trans_task]
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:11.98 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  828 audioserver  20   0 101M  17M  10M S  2.0   0.2   2:47.56 audioserver
+  601 audioserver  20   0  39M  12M 4.9M S  1.6   0.1   2:31.87 android.hardware.audio@2.0-service
+  367 root         RT   0    0    0    0 S  1.6   0.0   4:03.20 [cfinteractive]
+14795 u0_a34       20   0 1.7G  77M  55M S  1.3   1.0   2:58.22 com.tencent.wecarnavi
+ 3455 u0_a51       20   0 1.7G  77M  55M S  1.3   1.0   4:03.44 com.tencent.wecarspeech.gaodeagent
+ 3136 u0_a76       20   0 1.7G 101M  59M S  1.3   1.3   4:42.28 com.tencent.wecarflow:coreService
+
+
+
+2021-03-16 15:33:45
+Tasks: 634 total,   4 running, 625 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7130096k used,   674504k free,   109000k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3564220k cached
+400%cpu 141%user  15%nice 102%sys 120%idle   0%iow  17%irq   5%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  83M  40M S 42.0   1.0  78:45.49 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 32.0   0.9  64:49.50 vendor.ts.hardware.automotive.vehicle@2.0-service
+  865 system       20   0  51M  14M 5.6M S 21.0   0.1  31:09.94 chj_datacollector
+ 1402 system       20   0 4.2G  80M  45M S 20.0   1.0  28:57.68 com.android.car
+ 1426 system       20   0 4.2G  73M  46M S 18.3   0.9   5:07.33 com.chehejia.log
+  852 mediacodec   20   0 133M  32M  26M S 14.3   0.4  19:09.63 media.codec hw/android.hardware.media.omx@1.0-service
+ 3347 u0_a27       20   0 1.7G 134M  90M S 12.3   1.7  15:57.25 com.chehejia.car.music.v3
+ 2711 system       10 -10 4.2G 161M  41M S  9.3   2.1  12:46.37 com.apical.dvr
+ 3445 u0_a42       20   0 2.1G 275M  67M S  9.0   3.6  14:56.15 com.tencent.wecarspeech
+ 1072 system       10 -10  30M 3.6M 2.4M S  8.3   0.0  14:34.07 ais_server
+  964 system       18  -2 4.3G 161M 116M S  6.3   2.1  28:35.14 system_server
+ 1538 system       20   0 4.2G 104M  50M S  5.6   1.3  16:38.27 com.chehejia.datacollection
+  853 system        3 -17 424M  12M 5.3M S  4.6   0.1  10:29.83 zadas_services
+  491 logd         30  10  53M  33M 1.4M S  4.6   0.4   9:32.20 logd
+14104 root         20   0  11M 2.9M 1.5M R  4.3   0.0   0:02.13 top -b -m 30
+ 1593 system       12  -8 4.1G  64M  42M S  3.6   0.8   7:49.94 com.android.car:ChjCarPowerService
+  640 system       -2  -8 225M  25M  16M R  3.3   0.3  13:04.03 surfaceflinger
+ 2881 u0_a21       20   0 1.9G 225M 147M S  3.0   2.9  12:55.77 com.autonavi.amapauto
+  987 logd         30  10  27M 4.1M 2.6M S  3.0   0.0   6:23.82 logsaver --save_all
+  820 system       20   0  12M 2.5M 1.4M S  3.0   0.0   4:26.79 cnss_diag -q -f
+14795 u0_a34       20   0 1.7G  78M  55M S  2.6   1.0   2:58.26 com.tencent.wecarnavi
+ 1497 u0_a30       20   0 4.2G 112M  75M S  2.6   1.4   3:20.86 com.android.systemui
+  611 system       -3  -8 141M 7.0M 4.5M S  2.6   0.0  11:32.64 android.hardware.graphics.composer@2.1-service
+  302 root         20   0    0    0    0 R  2.6   0.0   5:15.81 [trans_task]
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:12.05 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+ 4417 system       10 -10 4.2G 109M  75M S  2.0   1.4   3:35.11 com.chehejia.m01.launcher
+ 3455 u0_a51       20   0 1.7G  77M  55M S  2.0   1.0   4:03.48 com.tencent.wecarspeech.gaodeagent
+ 3136 u0_a76       20   0 1.7G 101M  59M S  2.0   1.3   4:42.32 com.tencent.wecarflow:coreService
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:47.62 audioserver
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.6   0.0   3:31.28 android.hardware.broadcastradio@2.0-service
+
+
+
+2021-03-16 15:33:48
+Tasks: 634 total,   3 running, 624 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7126764k used,   677836k free,   109012k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3572676k cached
+400%cpu 148%user  11%nice 110%sys 110%idle   1%iow  16%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 42.3   1.0  78:46.75 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 31.3   0.9  64:50.46 vendor.ts.hardware.automotive.vehicle@2.0-service
+  865 system       20   0  51M  14M 5.6M S 21.6   0.1  31:10.57 chj_datacollector
+ 1426 system       20   0 4.2G  73M  46M S 17.3   0.9   5:07.88 com.chehejia.log
+  852 mediacodec   20   0 133M  32M  26M S 16.6   0.4  19:10.06 media.codec hw/android.hardware.media.omx@1.0-service
+  964 system       18  -2 4.4G 166M 118M S 13.3   2.1  28:35.33 system_server
+ 1402 system       20   0 4.2G  71M  45M S 12.6   0.9  28:58.28 com.android.car
+ 1538 system       20   0 4.2G 106M  50M S 12.3   1.3  16:38.44 com.chehejia.datacollection
+ 3347 u0_a27       20   0 1.7G 135M  90M S 11.6   1.7  15:57.62 com.chehejia.car.music.v3
+ 2711 system       10 -10 4.2G 163M  41M S 11.0   2.1  12:46.65 com.apical.dvr
+ 3445 u0_a42       20   0 2.1G 275M  67M S  8.6   3.6  14:56.42 com.tencent.wecarspeech
+ 1072 system       10 -10  30M 3.6M 2.4M S  8.6   0.0  14:34.32 ais_server
+  853 system        3 -17 424M  12M 5.3M S  4.6   0.1  10:29.97 zadas_services
+14104 root         20   0  11M 2.9M 1.5M R  4.3   0.0   0:02.26 top -b -m 30
+  491 logd         30  10  53M  33M 1.4M S  4.0   0.4   9:32.34 logd
+ 2881 u0_a21       20   0 1.9G 225M 147M S  3.6   2.9  12:55.86 com.autonavi.amapauto
+ 1593 system       12  -8 4.1G  65M  42M S  3.6   0.8   7:50.05 com.android.car:ChjCarPowerService
+  640 system       -2  -8 225M  25M  16M S  3.6   0.3  13:04.13 surfaceflinger
+  611 system       -3  -8 141M 7.0M 4.5M S  3.0   0.0  11:32.72 android.hardware.graphics.composer@2.1-service
+ 1497 u0_a30       20   0 4.2G 112M  75M S  2.6   1.4   3:20.94 com.android.systemui
+  987 logd         30  10  27M 4.1M 2.6M S  2.6   0.0   6:23.91 logsaver --save_all
+  864 root         20   0  29M 7.5M 4.7M S  2.6   0.0   5:12.12 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  302 root         20   0    0    0    0 R  2.6   0.0   5:15.89 [trans_task]
+ 4417 system       10 -10 4.2G 109M  75M S  2.3   1.4   3:35.17 com.chehejia.m01.launcher
+  367 root         RT   0    0    0    0 S  2.3   0.0   4:03.30 [cfinteractive]
+  828 audioserver  20   0 101M  17M  10M S  2.0   0.2   2:47.67 audioserver
+ 5850 u0_a6        20   0 1.6G  61M  46M S  1.6   0.8   0:12.11 com.bilibili.bilithings:pushservice
+ 3136 u0_a76       20   0 1.7G 101M  59M S  1.6   1.3   4:42.38 com.tencent.wecarflow:coreService
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.6   0.0   3:31.33 android.hardware.broadcastradio@2.0-service
+  601 audioserver  20   0  39M  12M 4.9M S  1.6   0.1   2:31.97 android.hardware.audio@2.0-service
+
+
+
+2021-03-16 15:33:52
+Tasks: 634 total,   2 running, 627 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7150352k used,   654248k free,   109036k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3580700k cached
+400%cpu 243%user  13%nice 149%sys  34%idle   0%iow  24%irq   6%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 62.3   1.1  78:48.02 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 38.6   0.9  64:51.40 vendor.ts.hardware.automotive.vehicle@2.0-service
+  865 system       20   0  51M  14M 5.6M S 30.3   0.1  31:11.22 chj_datacollector
+ 2152 system       20   0 4.3G 183M 107M S 22.6   2.4   2:11.50 com.chehejia.m01.passengerlauncher
+ 3445 u0_a42       20   0 2.1G 275M  67M S 18.6   3.6  14:56.68 com.tencent.wecarspeech
+ 1426 system       20   0 4.2G  73M  46M S 18.3   0.9   5:08.40 com.chehejia.log
+ 1402 system       20   0 4.2G  75M  45M S 17.3   0.9  28:58.66 com.android.car
+ 3347 u0_a27       20   0 1.7G 135M  90M R 16.0   1.7  15:57.97 com.chehejia.car.music.v3
+  640 system       -2  -8 225M  25M  16M S 15.3   0.3  13:04.24 surfaceflinger
+  964 system       18  -2 4.4G 169M 121M S 13.3   2.2  28:35.73 system_server
+  611 system       -3  -8 141M 7.0M 4.5M S 11.6   0.0  11:32.81 android.hardware.graphics.composer@2.1-service
+  852 mediacodec   20   0 133M  32M  26M S 11.0   0.4  19:10.56 media.codec hw/android.hardware.media.omx@1.0-service
+ 1072 system       10 -10  30M 3.6M 2.4M S 10.6   0.0  14:34.58 ais_server
+14104 root         20   0  11M 2.9M 1.5M R  8.3   0.0   0:02.39 top -b -m 30
+ 1538 system       20   0 4.2G  85M  50M S  7.6   1.1  16:38.81 com.chehejia.datacollection
+ 2711 system       10 -10 4.2G 165M  41M S  6.6   2.1  12:46.98 com.apical.dvr
+  853 system        3 -17 424M  12M 5.3M S  5.6   0.1  10:30.11 zadas_services
+  820 system       20   0  12M 2.5M 1.4M S  5.3   0.0   4:26.90 cnss_diag -q -f
+  491 logd         30  10  53M  33M 1.4M S  5.0   0.4   9:32.46 logd
+ 1593 system       12  -8 4.1G  65M  42M S  4.6   0.8   7:50.16 com.android.car:ChjCarPowerService
+ 2881 u0_a21       20   0 1.9G 225M 147M S  4.3   2.9  12:55.97 com.autonavi.amapauto
+ 1497 u0_a30       20   0 4.2G 112M  75M S  3.6   1.4   3:21.02 com.android.systemui
+  987 logd         30  10  27M 4.1M 2.6M S  3.6   0.0   6:23.99 logsaver --save_all
+  302 root         20   0    0    0    0 S  3.0   0.0   5:15.97 [trans_task]
+ 4417 system       10 -10 4.2G 109M  75M S  2.6   1.4   3:35.24 com.chehejia.m01.launcher
+ 3455 u0_a51       20   0 1.7G  78M  55M S  2.6   1.0   4:03.57 com.tencent.wecarspeech.gaodeagent
+14795 u0_a34       20   0 1.7G  78M  55M S  2.3   1.0   2:58.36 com.tencent.wecarnavi
+ 3136 u0_a76       20   0 1.7G 101M  59M S  2.3   1.3   4:42.43 com.tencent.wecarflow:coreService
+  864 root         20   0  29M 7.5M 4.7M S  2.3   0.0   5:12.20 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  828 audioserver  20   0 101M  17M  10M S  2.3   0.2   2:47.73 audioserver
+
+
+
+2021-03-16 15:33:54
+Tasks: 634 total,   3 running, 626 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7161324k used,   643276k free,   109040k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3585628k cached
+400%cpu 152%user   6%nice 118%sys 108%idle   0%iow  12%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 39.6   1.0  78:49.89 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 28.0   0.9  64:52.56 vendor.ts.hardware.automotive.vehicle@2.0-service
+  964 system       18  -2 4.4G 176M 125M S 22.3   2.3  28:36.13 system_server
+  865 system       20   0  51M  14M 5.6M S 18.6   0.1  31:12.13 chj_datacollector
+ 4417 system       20   0 4.2G 111M  77M S 18.0   1.4   3:35.32 com.chehejia.m01.launcher
+  640 system       -2  -8 218M  25M  16M S 16.3   0.3  13:04.70 surfaceflinger
+  852 mediacodec   20   0 133M  32M  26M S 14.0   0.4  19:10.89 media.codec hw/android.hardware.media.omx@1.0-service
+ 2881 u0_a21       20   0 1.9G 225M 147M S 13.0   2.9  12:56.10 com.autonavi.amapauto
+  611 system       -3  -8 141M 7.0M 4.5M S 12.0   0.0  11:33.16 android.hardware.graphics.composer@2.1-service
+ 1402 system       20   0 4.2G  78M  45M S 11.3   1.0  28:59.18 com.android.car
+ 3347 u0_a27       20   0 1.7G 135M  90M S 10.0   1.7  15:58.45 com.chehejia.car.music.v3
+ 2711 system       10 -10 4.2G 167M  41M S 10.0   2.1  12:47.18 com.apical.dvr
+ 3445 u0_a42       20   0 2.1G 274M  67M S  7.3   3.5  14:57.24 com.tencent.wecarspeech
+ 1426 system       20   0 4.2G  73M  46M S  6.6   0.9   5:08.95 com.chehejia.log
+ 1072 system       10 -10  30M 3.6M 2.4M S  6.6   0.0  14:34.90 ais_server
+14104 root         20   0  11M 2.9M 1.5M R  5.3   0.0   0:02.64 top -b -m 30
+ 1538 system       20   0 4.2G  88M  50M S  4.6   1.1  16:39.04 com.chehejia.datacollection
+  853 system        3 -17 424M  12M 5.3M S  3.6   0.1  10:30.28 zadas_services
+  491 logd         30  10  53M  33M 1.4M S  3.0   0.4   9:32.61 logd
+ 2152 system       10 -10 4.3G 183M 107M S  2.6   2.4   2:12.18 com.chehejia.m01.passengerlauncher
+ 1593 system       12  -8 4.1G  65M  42M S  2.6   0.8   7:50.30 com.android.car:ChjCarPowerService
+ 1497 u0_a30       20   0 4.2G 112M  75M S  2.3   1.4   3:21.13 com.android.systemui
+  987 logd         30  10  27M 4.1M 2.6M R  2.3   0.0   6:24.10 logsaver --save_all
+  302 root         20   0    0    0    0 S  2.3   0.0   5:16.06 [trans_task]
+14795 u0_a34       20   0 1.7G  78M  55M S  2.0   1.0   2:58.43 com.tencent.wecarnavi
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:47.80 audioserver
+ 3455 u0_a51       20   0 1.7G  78M  55M S  1.3   1.0   4:03.65 com.tencent.wecarspeech.gaodeagent
+ 3136 u0_a76       20   0 1.7G 102M  59M S  1.3   1.3   4:42.50 com.tencent.wecarflow:coreService
+ 1333 system        4 -16 4.6G 240M 116M S  1.3   3.1   4:17.22 com.chehejia.car.svm
+  864 root         20   0  29M 7.5M 4.7M S  1.3   0.0   5:12.27 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+
+
+
+2021-03-16 15:33:57
+Tasks: 635 total,   2 running, 628 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7157376k used,   647224k free,   109044k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3581100k cached
+400%cpu 181%user  11%nice 116%sys  71%idle   0%iow  17%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 41.0   1.0  78:51.08 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 29.0   0.9  64:53.40 vendor.ts.hardware.automotive.vehicle@2.0-service
+ 4417 system       10 -10 4.2G 115M  81M S 26.6   1.5   3:35.86 com.chehejia.m01.launcher
+  640 system       -2  -8 218M  25M  16M S 20.0   0.3  13:05.19 surfaceflinger
+ 1402 system       20   0 4.2G  80M  45M S 19.3   1.0  28:59.52 com.android.car
+ 2881 u0_a21       20   0 1.9G 225M 147M S 19.0   2.9  12:56.49 com.autonavi.amapauto
+  611 system       -3  -8 141M 7.0M 4.5M S 15.0   0.0  11:33.52 android.hardware.graphics.composer@2.1-service
+  852 mediacodec   20   0 133M  32M  26M S 14.0   0.4  19:11.31 media.codec hw/android.hardware.media.omx@1.0-service
+ 1426 system       20   0 4.2G  73M  46M S 13.6   0.9   5:09.15 com.chehejia.log
+  865 system       20   0  51M  14M 5.6M S 13.3   0.1  31:12.69 chj_datacollector
+ 3347 u0_a27       20   0 1.7G 135M  90M S 11.0   1.7  15:58.75 com.chehejia.car.music.v3
+  964 system       18  -2 4.4G 179M 127M S  9.6   2.3  28:36.80 system_server
+ 2711 system       10 -10 4.2G 168M  41M S  9.0   2.2  12:47.48 com.apical.dvr
+ 3445 u0_a42       20   0 2.1G 274M  67M S  8.3   3.6  14:57.46 com.tencent.wecarspeech
+ 1072 system       10 -10  30M 3.6M 2.4M S  7.0   0.0  14:35.10 ais_server
+ 1538 system       20   0 4.2G  90M  50M S  5.6   1.1  16:39.18 com.chehejia.datacollection
+14104 root         20   0  11M 2.9M 1.5M R  4.3   0.0   0:02.80 top -b -m 30
+  853 system        3 -17 424M  12M 5.3M S  4.3   0.1  10:30.39 zadas_services
+  491 logd         30  10  53M  33M 1.4M S  3.6   0.4   9:32.70 logd
+ 1593 system       12  -8 4.1G  66M  42M S  3.3   0.8   7:50.38 com.android.car:ChjCarPowerService
+ 1497 u0_a30       20   0 4.2G 112M  75M S  3.0   1.4   3:21.20 com.android.systemui
+  302 root         20   0    0    0    0 S  2.6   0.0   5:16.13 [trans_task]
+  987 logd         30  10  27M 4.1M 2.6M S  2.3   0.0   6:24.17 logsaver --save_all
+  864 root         20   0  29M 7.5M 4.7M S  2.0   0.0   5:12.31 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+ 3455 u0_a51       20   0 1.7G  78M  55M S  1.6   1.0   4:03.69 com.tencent.wecarspeech.gaodeagent
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:47.85 audioserver
+  601 audioserver  20   0  39M  12M 4.9M S  1.6   0.1   2:32.12 android.hardware.audio@2.0-service
+ 3136 u0_a76       20   0 1.7G 102M  59M S  1.3   1.3   4:42.54 com.tencent.wecarflow:coreService
+ 1333 system        4 -16 4.6G 240M 116M S  1.3   3.1   4:17.26 com.chehejia.car.svm
+  820 system       20   0  12M 2.5M 1.4M S  1.3   0.0   4:27.08 cnss_diag -q -f
+
+
+
+2021-03-16 15:34:00
+Tasks: 635 total,   1 running, 627 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7057724k used,   746876k free,   109048k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3474540k cached
+400%cpu 193%user   8%nice 171%sys   5%idle   0%iow  18%irq   5%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+ 2698 system       20   0 4.2G  84M  40M S 40.0   1.0  78:52.31 com.chj.voicerecognize.captureservice
+ 4417 system       10 -10 4.2G 121M  87M S 37.0   1.5   3:36.66 com.chehejia.m01.launcher
+  631 vehicle_network 20 0 175M 73M  20M S 29.6   0.9  64:54.27 vendor.ts.hardware.automotive.vehicle@2.0-service
+  640 system       -2  -8 220M  25M  16M S 25.0   0.3  13:05.79 surfaceflinger
+  964 system       18  -2 4.4G 183M 130M S 21.3   2.3  28:37.09 system_server
+  611 system       -3  -8 143M 7.0M 4.5M S 19.6   0.0  11:33.97 android.hardware.graphics.composer@2.1-service
+ 2881 u0_a21       20   0 1.9G 226M 148M S 14.6   2.9  12:57.06 com.autonavi.amapauto
+ 3347 u0_a27       20   0 1.7G 135M  90M S 12.6   1.7  15:59.08 com.chehejia.car.music.v3
+ 1402 system       20   0 4.2G  73M  45M S 12.6   0.9  29:00.10 com.android.car
+  865 system       20   0  51M  14M 5.6M S 12.3   0.1  31:13.09 chj_datacollector
+ 1426 system       20   0 4.2G  73M  46M S 11.6   0.9   5:09.56 com.chehejia.log
+  852 mediacodec   20   0 133M  32M  26M S 10.0   0.4  19:11.73 media.codec hw/android.hardware.media.omx@1.0-service
+ 3445 u0_a42       20   0 2.1G 275M  67M S  9.6   3.6  14:57.71 com.tencent.wecarspeech
+ 1072 system       10 -10  30M 3.6M 2.4M S  9.3   0.0  14:35.31 ais_server
+ 1538 system       20   0 4.2G  93M  50M S  7.0   1.2  16:39.35 com.chehejia.datacollection
+ 2711 system       10 -10 4.2G 170M  41M S  6.3   2.2  12:47.75 com.apical.dvr
+14104 root         20   0  11M 2.9M 1.5M R  4.6   0.0   0:02.93 top -b -m 30
+  853 system        3 -17 424M  12M 5.3M S  4.3   0.1  10:30.52 zadas_services
+  491 logd         30  10  53M  33M 1.4M S  4.0   0.4   9:32.81 logd
+ 3455 u0_a51       20   0 1.7G  79M  55M S  3.3   1.0   4:03.74 com.tencent.wecarspeech.gaodeagent
+ 1593 system       12  -8 4.1G  66M  42M S  3.3   0.8   7:50.48 com.android.car:ChjCarPowerService
+  820 system       20   0  12M 2.5M 1.4M S  3.3   0.0   4:27.12 cnss_diag -q -f
+ 1497 u0_a30       20   0 4.2G 112M  75M S  3.0   1.4   3:21.29 com.android.systemui
+  987 logd         30  10  27M 4.1M 2.6M S  2.6   0.0   6:24.24 logsaver --save_all
+  302 root         20   0    0    0    0 S  2.3   0.0   5:16.21 [trans_task]
+ 3136 u0_a76       20   0 1.7G 102M  59M S  2.0   1.3   4:42.58 com.tencent.wecarflow:coreService
+  864 root         20   0  29M 7.5M 4.7M S  2.0   0.0   5:12.37 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  828 audioserver  20   0 101M  17M  10M S  2.0   0.2   2:47.90 audioserver
+14795 u0_a34       20   0 1.7G  78M  55M S  1.6   1.0   2:58.51 com.tencent.wecarnavi
+  603 audioserver  20   0  23M 3.0M 2.3M S  1.6   0.0   3:31.51 android.hardware.broadcastradio@2.0-service
+
+
+
+2021-03-16 15:34:03
+Tasks: 636 total,   5 running, 625 sleeping,   0 stopped,   1 zombie
+Mem:   7804600k total,  7108616k used,   695984k free,   109052k buffers
+Swap:  1048572k total,        0k used,  1048572k free,  3517016k cached
+400%cpu 170%user   4%nice 181%sys  28%idle   0%iow  13%irq   4%sirq   0%host
+  PID USER         PR  NI VIRT  RES  SHR S[%CPU] %MEM     TIME+ ARGS                       
+14228 root         20   0  11M 2.4M 1.8M R 67.0   0.0   0:00.67 atrace sched freq idle am wm gfx view sync binder_driver irq workq input ss --async_stop -o /sdcard/a.trace
+ 2698 system       20   0 4.2G  84M  40M S 41.3   1.0  78:53.51 com.chj.voicerecognize.captureservice
+  631 vehicle_network 20 0 175M 73M  20M S 27.3   0.9  64:55.16 vendor.ts.hardware.automotive.vehicle@2.0-service
+ 4417 system       10 -10 4.2G 127M  93M S 26.6   1.6   3:37.77 com.chehejia.m01.launcher
+  640 system       -2  -8 218M  25M  16M S 19.0   0.3  13:06.54 surfaceflinger
+  852 mediacodec   20   0 133M  32M  26M S 15.3   0.4  19:12.03 media.codec hw/android.hardware.media.omx@1.0-service
+  611 system       -3  -8 141M 7.0M 4.5M S 15.0   0.0  11:34.56 android.hardware.graphics.composer@2.1-service
+ 2881 u0_a21       20   0 1.9G 226M 147M S 13.0   2.9  12:57.50 com.autonavi.amapauto
+ 3347 u0_a27       20   0 1.7G 135M  90M S 12.3   1.7  15:59.46 com.chehejia.car.music.v3
+ 1426 system       20   0 4.2G  73M  46M S 12.0   0.9   5:09.91 com.chehejia.log
+ 1402 system       20   0 4.2G  74M  45M S 12.0   0.9  29:00.48 com.android.car
+  865 system       20   0  51M  14M 5.6M S 10.3   0.1  31:13.46 chj_datacollector
+ 2711 system       10 -10 4.2G 172M  41M S 10.0   2.2  12:47.94 com.apical.dvr
+ 3445 u0_a42       20   0 2.1G 275M  67M S  8.0   3.6  14:58.00 com.tencent.wecarspeech
+  964 system       18  -2 4.4G 188M 132M S  6.3   2.4  28:37.73 system_server
+ 1538 system       20   0 4.2G  96M  50M S  6.0   1.2  16:39.56 com.chehejia.datacollection
+ 1072 system       10 -10  30M 3.6M 2.4M S  5.6   0.0  14:35.59 ais_server
+14104 root         20   0  11M 2.9M 1.5M R  4.0   0.0   0:03.07 top -b -m 30
+  853 system        3 -17 424M  12M 5.3M S  3.6   0.1  10:30.65 zadas_services
+ 1593 system       12  -8 4.1G  66M  42M S  3.3   0.8   7:50.58 com.android.car:ChjCarPowerService
+ 1497 u0_a30       20   0 4.2G 111M  74M S  2.6   1.4   3:21.38 com.android.systemui
+  491 logd         30  10  53M  33M 1.4M S  2.6   0.4   9:32.93 logd
+  302 root         20   0    0    0    0 R  2.3   0.0   5:16.28 [trans_task]
+  987 logd         30  10  27M 4.1M 2.6M S  2.0   0.0   6:24.32 logsaver --save_all
+ 3136 u0_a76       20   0 1.7G 103M  59M S  1.6   1.3   4:42.64 com.tencent.wecarflow:coreService
+  864 root         20   0  29M 7.5M 4.7M S  1.6   0.0   5:12.43 udsapp /diag_data/dem/dem.db /diag_data/dem/dem_bak.db
+  828 audioserver  20   0 101M  17M  10M S  1.6   0.2   2:47.96 audioserver
+14795 u0_a34       20   0 1.7G  78M  55M S  1.3   1.0   2:58.56 com.tencent.wecarnavi
+ 3455 u0_a51       20   0 1.7G  76M  55M S  1.3   1.0   4:03.84 com.tencent.wecarspeech.gaodeagent
+ 1333 system        4 -16 4.6G 240M 116M S  1.3   3.1   4:17.34 com.chehejia.car.svm

@@ -7,15 +7,14 @@ from openpyxl import load_workbook
 每次运行前，记得删除cpu-result.xlsx，不然sheet会不断累加
 sheet页名称为文件名
 """
-pids = ['system_server', 'surfaceflinger',  'com.chehejia.car.voice']#除系统user\sys等之外，需要监控的进程
-dir_path = r'/home/wangwei1/wangwei1/codes/github/python'#待分析目录
+pids = ['com.bilibili.bilithings', 'com.android.car']#除系统user\sys等之外，需要监控的进程
+dir_path = r'/home/wangwei1/wangwei1/codes/github/python/chedaojidaohang'#待分析目录
 
 
 def parse_top(cpu_path):
     result = []  # 存储数据
     tasks = user = nice = sys = idle = iow = irq = sirq = host = 0
     pid_values = [0 for i in range(len(pids))]
-    # print(len(pids))
     dict_pid = dict(zip(pids, pid_values))
     with open(cpu_path, mode='r', encoding='utf-8') as f:
         line = f.readline()
@@ -65,6 +64,9 @@ def main():
                     print(file_name, e)
                     continue
                 
+                if  os.path.exists(result_path) != True:
+                    print('excel file is not exist,create it')
+                    pf.to_excel(result_path)
                 writer = pd.ExcelWriter(result_path, engine='openpyxl', mode='a')
                 # writer = pd.ExcelWriter(result_path, engine='openpyxl')
                 # if os.path.exists(result_path):

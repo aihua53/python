@@ -1,8 +1,9 @@
 import re, os, numpy
 import pandas as pd
 from openpyxl import load_workbook
+import argparse, sys
 
-dir_path = r'/home/wangwei1/wangwei1/work/performance/temp/'#待分析目录
+# dir_path = r'/home/wangwei1/wangwei1/work/performance/'#待分析目录
 
 def parse(file):
     result = []
@@ -17,8 +18,14 @@ def parse(file):
                 result.append(dict({'fps':int(count)}))
         return result
 
+def get_args():
+    parse = argparse.ArgumentParser()
+    parse.add_argument("-p", "--path", help="Input the log path", required=True)
+    return parse.parse_args();
 
-def main():
+def main(argv):
+    print(get_args())
+    dir_path = get_args().path
     result_path = os.path.join(dir_path, f'result.xlsx')
     if os.path.exists(result_path) == True:
         os.remove(result_path)
@@ -42,4 +49,6 @@ def main():
                 ds.to_excel(writer, sheet_name=os.path.splitext(file_name)[0]+ '-ds', index_label='index')
                 writer.save()
 
-main()
+# main()
+if __name__ == "__main__":
+    	main(sys.argv)

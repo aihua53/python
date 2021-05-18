@@ -7,8 +7,9 @@ from openpyxl import load_workbook
 每次运行前，记得删除cpu-result.xlsx，不然sheet会不断累加
 sheet页名称为文件名
 """
-pids = ['com.bilibili.bilithings', 'com.android.car']#除系统user\sys等之外，需要监控的进程
-dir_path = r'/home/wangwei1/wangwei1/codes/github/python/chedaojidaohang'#待分析目录
+# pids = ['com.bilibili.bilithings', 'com.bilibili.bilithings:ijkservice']#除系统user\sys等之外，需要监控的进程
+pids = ['tv.danmaku.bili', 'tv.danmaku.bili:ijkservice']#除系统user\sys等之外，需要监控的进程
+dir_path = r'/home/wangwei1/wangwei1/work/performance/bilibili/test'#待分析目录
 
 
 def parse_top(cpu_path):
@@ -51,6 +52,8 @@ def parse_top(cpu_path):
 
 def main():
     result_path = os.path.join(dir_path, f'cpu-result.xlsx')
+    if os.path.exists(result_path) == True:
+        os.remove(result_path)
     for file_name in os.listdir(dir_path):#case#loop
         if os.path.splitext(file_name)[-1] == '.txt':
             filepath = os.path.join(dir_path, file_name)

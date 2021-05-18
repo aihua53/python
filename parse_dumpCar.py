@@ -3,7 +3,6 @@ import pandas as pd
 from openpyxl import load_workbook
 
 path = r'/home/wangwei1/wangwei1/work/performance/'
-# file_path =path + '1.txt'#待分析文件
 file_path =path + 'dump_car.txt'#待分析文件
 parse_result = []
 
@@ -39,6 +38,8 @@ def parse(file_path):
 
 def main():
     result_path = os.path.join(path, f'cpu-result.xlsx')
+    if os.path.exists(result_path) == True:
+        os.remove(result_path)
     try:
         parse_result = parse(file_path)
         pf = pd.DataFrame(parse_result)

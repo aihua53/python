@@ -13,14 +13,15 @@ def parse(file):
             line = f.readline()
             if not line:
                 break
-            count = re.search(r'count :(\d+)',line).group(1)
-            if count != 0:
+            search_result = re.search(r'count :(\d+)',line)
+            if search_result:
+                count = search_result.group(1)
                 result.append(dict({'fps':int(count)}))
         return result
 
 def get_args():
     parse = argparse.ArgumentParser()
-    parse.add_argument("-p", "--path", help="Input the log path", required=True)
+    parse.add_argument("-p", "--path", help="Input the file path", required=True)
     return parse.parse_args();
 
 def main(argv):

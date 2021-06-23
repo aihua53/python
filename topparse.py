@@ -9,7 +9,7 @@ sheet页名称为文件名
 """
 # pids = ['com.bilibili.bilithings', 'com.bilibili.bilithings:ijkservice']#除系统user\sys等之外，需要监控的进程
 pids = ['tv.danmaku.bili', 'tv.danmaku.bili:ijkservice']#除系统user\sys等之外，需要监控的进程
-dir_path = r'/home/wangwei1/wangwei1/work/performance/bilibili/test'#待分析目录
+dir_path = r'D:\github\python'#待分析目录
 
 
 def parse_top(cpu_path):

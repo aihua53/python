@@ -7,10 +7,20 @@ from openpyxl import load_workbook
 每次运行前，记得删除cpu-result.xlsx，不然sheet会不断累加
 sheet页名称为文件名
 """
-# pids = ['com.bilibili.bilithings', 'com.bilibili.bilithings:ijkservice']#除系统user\sys等之外，需要监控的进程
-pids = ['tv.danmaku.bili', 'tv.danmaku.bili:ijkservice']#除系统user\sys等之外，需要监控的进程
-dir_path = r'D:\github\python'#待分析目录
+#需要监控的进程
+# bilibili
+# pid_bilibili = ['com.bilibili.bilithings', 'com.bilibili.bilithings:ijkservice','surfaceflinger','android.hardware.graphics.composer@2.1-service']#除系统user\sys等之外，需要监控的进程
 
+# tencent
+pid_tencent = ['com.tencent.wecarnavi','com.tencent.wecarspeech','com.tencent.wecarspeech:coreService', 'com.tencent.wecarflow:coreService','com.tencent.wecarflow','com.tencent.taiservice:coreService']
+
+# other background
+pid_others = ['com.chehejia.ssp.edge', 'com.liauto.lanenavi','com.chehejia.fapa','zadas_services','com.chehejia.car.svm','cnss_diag -q -f','com.android.car']
+
+dir_path = r'Z:\performance\voice\0628\data_analysis'#待分析目录
+# dir_path = r'Z:\performance\bilibili'#待分析目录
+
+pids = pid_tencent + pid_others
 
 def parse_top(cpu_path):
     result = []  # 存储数据
@@ -26,7 +36,7 @@ def parse_top(cpu_path):
                     if user and any(dict_pid.values()):
                         result.append(
                             dict({'tasks': int(tasks), 'user': int(user), 'nice': int(nice), 'sys': int(sys),'idle': int(idle), 'iow': int(iow), 'irq': int(irq), 'sirq': int(sirq), 'host': int(host),
-                                  'usr+nice+sys+iow+irq+sirq': numpy.sum([int(user), int(nice), int(sys), int(iow), int(irq), int(sirq)])}, **dict_pid))
+                                  'total': numpy.sum([int(user), int(nice), int(sys),int(idle), int(iow), int(irq), int(sirq),int(host)])}, **dict_pid))
                         user = nice = sys = idle = iow = irq = sirq = host = 0
                         pid_values = [0 for i in range(len(pids))]
                         dict_pid = dict(zip(pids, pid_values))
@@ -45,13 +55,14 @@ def parse_top(cpu_path):
                 #添加最后一次数据
                 result.append(
                     dict({'tasks': int(tasks), 'user': int(user), 'nice': int(nice), 'sys': int(sys), 'idle': int(idle), 'iow': int(iow), 'irq': int(irq), 'sirq': int(sirq), 'host': int(host),
-                          'usr+nice+sys+iow+irq+sirq': numpy.sum([int(user), int(nice), int(sys), int(iow), int(irq), int(sirq)])}, **dict_pid))
+                          'total': numpy.sum([int(user), int(nice), int(sys), int(idle),int(iow), int(irq), int(sirq),int(host)])}, **dict_pid))
                 break
     return result
 
 
 def main():
     result_path = os.path.join(dir_path, f'cpu-result.xlsx')
+    #文件已存在，删除文件
     if os.path.exists(result_path) == True:
         os.remove(result_path)
     for file_name in os.listdir(dir_path):#case#loop
@@ -80,7 +91,7 @@ def main():
                 pf.to_excel(writer, sheet_name=os.path.splitext(file_name)[0], index_label='index')
                 ds.to_excel(writer, sheet_name=os.path.splitext(file_name)[0]+ '-ds', index_label='index')
                 writer.save()
-    print('数据处理结果', result_path, '\n下次测试前，记得删除或者重命名，避免数据累加')
+    print('数据处理结果', result_path)
                 
                 
 main()

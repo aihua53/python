@@ -9,24 +9,41 @@ sheet页名称为文件名
 """
 #需要监控的进程
 # bilibili
-# pid_bilibili = ['com.bilibili.bilithings', 'com.bilibili.bilithings:ijkservice','surfaceflinger','android.hardware.graphics.composer@2.1-service']#除系统user\sys等之外，需要监控的进程
+pid_bilibili = ['com.bilibili.bilithings', 'com.bilibili.bilithings:ijkservice','surfaceflinger','android.hardware.graphics.composer@2.1-service']#除系统user\sys等之外，需要监控的进程
 
 # tencent
-pid_tencent = ['com.tencent.wecarnavi','com.tencent.wecarspeech','com.tencent.wecarspeech:coreService', 'com.tencent.wecarflow:coreService','com.tencent.wecarflow','com.tencent.taiservice:coreService']
+pid_tencent = ['com.tencent.wecarspeech','com.tencent.wecarspeech:coreService', 'com.tencent.wecarflow:coreService','com.tencent.wecarflow','com.tencent.taiservice:coreService']
+
+# map
+pid_map = ['com.autonavi.amapauto','com.tencent.wecarnavi','com.baidu.naviauto']
+
+# data collection
+pid_datacollection = ['com.chehejia.log','chj_datacollector','com.chehejia.datacollection','com.chehejia.apacollector']
+
+# voice
+pid_voice = ['com.chj.voicerecognize.captureservice', 'com.chehejia.car.voice']
 
 # other background
 pid_others = ['com.chehejia.ssp.edge', 'com.liauto.lanenavi','com.chehejia.fapa','zadas_services','com.chehejia.car.svm','cnss_diag -q -f','com.android.car']
 
-dir_path = r'Z:\performance\voice\0628\data_analysis'#待分析目录
-# dir_path = r'Z:\performance\bilibili'#待分析目录
+# top
+pid_top_1 = ['com.chehejia.car.voice','com.chehejia.car.music.v3','com.chj.voicerecognize.captureservice','com.autonavi.amapauto','vendor.ts.hardware.automotive.vehicle@2.0-service','chj_datacollector','com.chehejia.datacollection','com.android.car','com.baidu.naviauto']
+pid_top_2 = ['com.android.car','system_server','zadas_services','android.hardware.graphics.composer@2.1-service','com.chehejia.ssp.edge','surfaceflinger','com.tencent.wecarspeech:coreService','com.tencent.taiservice:coreService']
+pid_top_3 = ['com.chehejia.car.svm','com.android.car:ChjCarPowerService','ais_server','com.tencent.wecarspeech:speechserver','com.liauto.lanenavi']
+pid_top_4 = ['com.android.car:ChjCarPowerService','com.android.systemui','logsaver --save_all','audioserver','netd','com.chehejia.iot.service','media.codec hw/android.hardware.media.omx@1.0-service','com.chehejia.car.mapvoice']
 
-pids = pid_tencent + pid_others
+# dir_path = r'Z:\performance\voice\0628\data_analysis'#待分析目录
+dir_path = r'Z:\temp'#待分析目录
+
+# pids = pid_tencent + pid_map + pid_datacollection + pid_others + pid_voice
+pids = ['com.chehejia.car.music.v3','system_server','surfaceflinger','android.hardware.graphics.composer@2.1-service','com.chehejia.m01.launcher']
 
 def parse_top(cpu_path):
     result = []  # 存储数据
     tasks = user = nice = sys = idle = iow = irq = sirq = host = 0
     pid_values = [0 for i in range(len(pids))]
     dict_pid = dict(zip(pids, pid_values))
+  
     with open(cpu_path, mode='r', encoding='utf-8') as f:
         line = f.readline()
         while True:
@@ -88,10 +105,10 @@ def main():
                 #     writer.book = book
                 
                 pf.fillna(' ', inplace=True)
-                pf.to_excel(writer, sheet_name=os.path.splitext(file_name)[0], index_label='index')
+                # pf.to_excel(writer, sheet_name=os.path.splitext(file_name)[0], index_label='index')
                 ds.to_excel(writer, sheet_name=os.path.splitext(file_name)[0]+ '-ds', index_label='index')
                 writer.save()
-    print('数据处理结果', result_path)
+    print('done!!!', result_path)
                 
                 
 main()

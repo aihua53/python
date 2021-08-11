@@ -23,8 +23,12 @@ pid_datacollection = ['com.chehejia.log','chj_datacollector','com.chehejia.datac
 # voice
 pid_voice = ['com.chj.voicerecognize.captureservice', 'com.chehejia.car.voice']
 
+# fata
+pid_fap = ['com.chehejia.car.svm','com.chehejia.fapa','ais_server','zadas_services','android.hardware.graphics.composer@2.1-service','surfaceflinger',]
+
 # other background
 pid_others = ['com.chehejia.ssp.edge', 'com.liauto.lanenavi','com.chehejia.fapa','zadas_services','com.chehejia.car.svm','cnss_diag -q -f','com.android.car']
+
 
 # top
 pid_top_1 = ['com.chehejia.car.voice','com.chehejia.car.music.v3','com.chj.voicerecognize.captureservice','com.autonavi.amapauto','vendor.ts.hardware.automotive.vehicle@2.0-service','chj_datacollector','com.chehejia.datacollection','com.android.car','com.baidu.naviauto']
@@ -33,10 +37,10 @@ pid_top_3 = ['com.chehejia.car.svm','com.android.car:ChjCarPowerService','ais_se
 pid_top_4 = ['com.android.car:ChjCarPowerService','com.android.systemui','logsaver --save_all','audioserver','netd','com.chehejia.iot.service','media.codec hw/android.hardware.media.omx@1.0-service','com.chehejia.car.mapvoice']
 
 # dir_path = r'Z:\performance\voice\0628\data_analysis'#待分析目录
-dir_path = r'Z:\temp'#待分析目录
+dir_path = r'D:\work\issue\fapa_tts\top'#待分析目录
 
 # pids = pid_tencent + pid_map + pid_datacollection + pid_others + pid_voice
-pids = ['com.chehejia.car.music.v3','system_server','surfaceflinger','android.hardware.graphics.composer@2.1-service','com.chehejia.m01.launcher']
+pids = pid_fap
 
 def parse_top(cpu_path):
     result = []  # 存储数据
@@ -52,7 +56,7 @@ def parse_top(cpu_path):
                 try:
                     if user and any(dict_pid.values()):
                         result.append(
-                            dict({'tasks': int(tasks), 'user': int(user), 'nice': int(nice), 'sys': int(sys),'idle': int(idle), 'iow': int(iow), 'irq': int(irq), 'sirq': int(sirq), 'host': int(host),
+                            dict({'time':sampling_time,'tasks': int(tasks), 'user': int(user), 'nice': int(nice), 'sys': int(sys),'idle': int(idle), 'iow': int(iow), 'irq': int(irq), 'sirq': int(sirq), 'host': int(host),
                                   'total': numpy.sum([int(user), int(nice), int(sys),int(idle), int(iow), int(irq), int(sirq),int(host)])}, **dict_pid))
                         user = nice = sys = idle = iow = irq = sirq = host = 0
                         pid_values = [0 for i in range(len(pids))]
@@ -60,6 +64,9 @@ def parse_top(cpu_path):
                 except ValueError:
                     print(user, type(user))
             
+            if(re.match(r'2021-',line))!=None:
+                sampling_time = line
+
             sys_result = re.search(r'(\d+)%cpu\s+(\d+)%user\s+(\d+)%nice\s+(\d+)%sys\s+(\d+)%idle\s+(\d+)%iow\s+(\d+)%irq\s+(\d+)%sirq\s+(\d+)%host.*', line)
             if sys_result:
                 (total, user, nice, sys, idle, iow, irq, sirq, host) = sys_result.groups()
@@ -71,7 +78,7 @@ def parse_top(cpu_path):
             if not line:
                 #添加最后一次数据
                 result.append(
-                    dict({'tasks': int(tasks), 'user': int(user), 'nice': int(nice), 'sys': int(sys), 'idle': int(idle), 'iow': int(iow), 'irq': int(irq), 'sirq': int(sirq), 'host': int(host),
+                    dict({'time':sampling_time, 'tasks': int(tasks), 'user': int(user), 'nice': int(nice), 'sys': int(sys), 'idle': int(idle), 'iow': int(iow), 'irq': int(irq), 'sirq': int(sirq), 'host': int(host),
                           'total': numpy.sum([int(user), int(nice), int(sys), int(idle),int(iow), int(irq), int(sirq),int(host)])}, **dict_pid))
                 break
     return result
@@ -105,7 +112,7 @@ def main():
                 #     writer.book = book
                 
                 pf.fillna(' ', inplace=True)
-                # pf.to_excel(writer, sheet_name=os.path.splitext(file_name)[0], index_label='index')
+                pf.to_excel(writer, sheet_name=os.path.splitext(file_name)[0], index_label='index')
                 ds.to_excel(writer, sheet_name=os.path.splitext(file_name)[0]+ '-ds', index_label='index')
                 writer.save()
     print('done!!!', result_path)

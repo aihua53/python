@@ -10,7 +10,10 @@ def main(argv):
     fd1 = open(sys.argv[1])
     contents = fd1.readlines()
     fd1.close()
-    os.system("rm -f result.json")
+    # os.system("rm -f result.json")
+    d = os.path.dirname(__file__)
+    if(os.path.exists(os.path.join(d,"result.json"))):
+        os.remove(os.path.join(d,"result.json"))
     fd2 = open("result.json", "w")
 
     for line in contents:

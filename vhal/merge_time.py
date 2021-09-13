@@ -1,8 +1,8 @@
+#!/usr/bin/python3.5
 import os, datetime, time
 import pandas as pd
 from openpyxl import load_workbook
 
-file_path = r'D:\github\python\vhal'#待分析目录
 file_name = []
 list_obj = []
 
@@ -17,6 +17,10 @@ file_name.append("eth_size")
 #parse time
 start_time = '17:29:05'
 end_time = '18:49:54'
+
+# file directory
+# file_path = os.path.dirname(__file__)
+file_path = os.getcwd()
 
 class To_be_analysed:
     def __init__(self,name,file):
@@ -33,6 +37,7 @@ class To_be_analysed:
 
 
 def main():
+    os.system(os.path.join(file_path, 'vhal_parse.sh'))
     for fn in file_name: 
         obj = To_be_analysed(fn,os.path.join(file_path,fn+".txt"))
         obj.create_dict()
@@ -53,7 +58,7 @@ def main():
         time1 = time1 + datetime.timedelta(seconds=1)
         cur_time = time1.strftime("%H:%M:%S")
 
-    result_path = os.path.join(file_path, f'parse_result.csv')
+    result_path = os.path.join(file_path, 'parse_result.csv')
     if os.path.exists(result_path) == True:
         os.remove(result_path)
 

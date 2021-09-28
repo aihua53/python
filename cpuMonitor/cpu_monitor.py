@@ -16,11 +16,15 @@ def parse_cpu(log):
         for line in content:
             j = json.loads(line)
 
+            dict = {}
             time_stamp = j['timestamp']
             loc_time = time.localtime(int(str(time_stamp)[0:10]))
             time1 = time.strftime("%Y-%m-%d %H:%M:%S",loc_time)
-            dict = {}
             dict['time'] = time1
+
+            if j['cpu']['total']['total'] < 50:
+                continue
+            dict['total'] = j['cpu']['total']['total']
 
             for i in range(0,14):
                 try:
@@ -45,7 +49,11 @@ def get_args():
 def main(argv):
     file = get_args().path
     parse_cpu(file)
-    
+
+ main(sys.argv)   
+
+# def main():
+#     parse_cpu(log)
 
 # main()
-main(sys.argv)
+

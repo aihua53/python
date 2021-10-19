@@ -24,7 +24,7 @@ pid_datacollection = ['com.chehejia.log','chj_datacollector','com.chehejia.datac
 pid_voice = ['com.chj.voicerecognize.captureservice', 'com.chehejia.car.voice']
 
 # fata
-pid_fap = ['com.chehejia.car.svm','com.chehejia.fapa','ais_server','zadas_services','android.hardware.graphics.composer@2.1-service','surfaceflinger',]
+pid_fapa = ['com.chehejia.car.svm','com.chehejia.fapa','ais_server','zadas_services','android.hardware.graphics.composer@2.1-service','surfaceflinger',]
 
 # other background
 pid_others = ['com.chehejia.ssp.edge', 'com.liauto.lanenavi','com.chehejia.fapa','zadas_services','com.chehejia.car.svm','cnss_diag -q -f','com.android.car']
@@ -36,11 +36,11 @@ pid_top_2 = ['com.android.car','system_server','zadas_services','android.hardwar
 pid_top_3 = ['com.chehejia.car.svm','com.android.car:ChjCarPowerService','ais_server','com.tencent.wecarspeech:speechserver','com.liauto.lanenavi']
 pid_top_4 = ['com.android.car:ChjCarPowerService','com.android.systemui','logsaver --save_all','audioserver','netd','com.chehejia.iot.service','media.codec hw/android.hardware.media.omx@1.0-service','com.chehejia.car.mapvoice']
 
-# dir_path = r'Z:\performance\voice\0628\data_analysis'#待分析目录
+# 待分析目录,根据实际情况修改
 dir_path = r'D:\work\issue\fapa_tts\top'#待分析目录
 
-# pids = pid_tencent + pid_map + pid_datacollection + pid_others + pid_voice
-pids = pid_fap
+# 待分析进程，根据实际情况修改
+pids = pid_fapa
 
 def parse_top(cpu_path):
     result = []  # 存储数据

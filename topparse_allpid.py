@@ -33,19 +33,16 @@ def parse_top(cpu_path):
                         dict_allpid.clear()
                 except ValueError:
                     print(user, type(user))
-            
-            if line == '\n':
-                sampling_time = line
-                isStart = False
 
             if(re.match(r'2021-',line))!=None:
                 sampling_time = line
+                isStart = False
 
             sys_result = re.search(r'(\d+)%cpu\s+(\d+)%user\s+(\d+)%nice\s+(\d+)%sys\s+(\d+)%idle\s+(\d+)%iow\s+(\d+)%irq\s+(\d+)%sirq\s+(\d+)%host.*', line)
             if sys_result:
                 (total_ps, user, nice, sys, idle, iow, irq, sirq, host) = sys_result.groups()
 
-            if isStart:
+            if isStart and line != '\n':
                 dict_allpid[line.split()[-1]] = float(line.split()[8])
 
             if line.strip().startswith("PID"):

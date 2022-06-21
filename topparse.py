@@ -64,7 +64,7 @@ def parse_top(cpu_path):
                 except ValueError:
                     print(user, type(user))
             
-            if(re.match(r'2021-',line))!=None:
+            if(re.match(r'2022-',line))!=None:
                 sampling_time = line
 
             sys_result = re.search(r'(\d+)%cpu\s+(\d+)%user\s+(\d+)%nice\s+(\d+)%sys\s+(\d+)%idle\s+(\d+)%iow\s+(\d+)%irq\s+(\d+)%sirq\s+(\d+)%host.*', line)

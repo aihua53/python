@@ -10,7 +10,9 @@ sheet页名称为文件名
 
 
 # 待分析目录,根据实际情况修改
-dir_path = r'/home/jerome/work/temp/topparser'#待分析目录
+dir_path = r'Z:\issues\x01\0620-master\cpu\1'#待分析目录
+# dir_path = r'D:\wangwei1\codes\github\python' #待分析目录
+
 
 
 def parse_top(cpu_path):
@@ -34,7 +36,7 @@ def parse_top(cpu_path):
                 except ValueError:
                     print(user, type(user))
 
-            if(re.match(r'2021-',line))!=None:
+            if(re.match(r'2022-',line))!=None:
                 sampling_time = line
                 isStart = False
 

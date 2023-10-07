@@ -1,12 +1,16 @@
 import re
 from datetime import datetime
 
-file_name = "temp.txt"  # 替换为您想要读取的文件名
+file_name = "dvmlog"  # 替换为您想要读取的文件名
 output_file = "out.txt"
+longTimeConsume = "lognTimeConsume.txt"
+timeConsume = 100
 
-#获取dvmlocklog的文件行数
+#获取文件行数
 f=open(file_name)
 length=len(f.readlines())
+
+# print(length)
 
 preline = ""
 
@@ -17,13 +21,12 @@ with open(file_name) as f:
     pattern = r"\d{2}:\d{2}:\d{2}.\d{3}"
     match = re.search(pattern, first_line)
     if match:
-        print(match.group())
         time_format = "%H:%M:%S.%f"
         time1 = datetime.strptime(match.group(), time_format)
 
 
 
-#打开文件dvmlocklog，打印前10行内容
+#计算持锁时间
 with open(file_name) as f, open(output_file, "w") as out_file:
     for line in f.readlines()[1:length]:
         pattern = r"\d{2}:\d{2}:\d{2}.\d{3}"
@@ -35,10 +38,11 @@ with open(file_name) as f, open(output_file, "w") as out_file:
             time_format = "%H:%M:%S.%f"
             time2 = datetime.strptime(match.group(), time_format)
             time_difference = time2 - time1
-            #time_difference转换为字符串类型
-            time_difference_ms = round(time_difference.total_seconds() * 1000)
-            time_difference = str(time_difference)
 
+            time_difference_ms = round(time_difference.total_seconds() * 1000)
+            # time_difference = str(time_difference)
+
+            
             
             output_str = f"{time_difference_ms} time:{columns[3]} {preline}"
             out_file.write(output_str)  # 写入文件
@@ -47,21 +51,7 @@ with open(file_name) as f, open(output_file, "w") as out_file:
             preline = line
 
 
-# # 打开文件
-# with open(output_file, "r") as file:
-#     # 逐行读取文件内容
-#     for line in file:
-#         # 使用逗号作为分隔符，切割每行数据
-#         elements = line.strip().split(",")
-#         # 检查每行是否包含至少七个元素
-#         if len(elements) >= 7:
-#             # 提取第七个元素
-#             seventh_element = elements[6]
-#             # 打印第七个元素
-#             print(seventh_element)
-#         else:
-#             print("行数据不足七个元素")      
-
+# 按迟锁函数出现的次数降序输出
 name_counts = {}
 
 with open(output_file, "r") as file:
@@ -78,5 +68,39 @@ sorted_name_counts = sorted(name_counts.items(), key=lambda x: x[1], reverse=Tru
 for name, count in sorted_name_counts:
     print(f"Name: {name} - Count: {count}")
 
-# for name, count in name_counts.items():
-#     print(f"Name: {name} - Count: {count}")
+
+
+
+#过滤耗时大于100ms的数据
+def filter_log(line):
+        first_element = line.split(' ')[0] 
+        # 有些日志行可能不以数字开头，我们需要处理这些情况
+        if first_element.isdigit() and int(first_element) > timeConsume:
+            return line
+    
+
+with open(output_file, "r") as file, open(longTimeConsume, "w") as out_file:
+    for line in file:
+        filtered_lines = filter_log(line)
+        if(filtered_lines != None):
+            out_file.write(filtered_lines)  # 写入文件
+
+
+
+
+# 耗时大于100ms的数据按迟锁函数出现的次数降序输出
+name_counts = {}
+
+with open(longTimeConsume, "r") as file:
+    for line in file:
+        elements = line.strip().split(",")
+        if len(elements) >= 7:
+            name = elements[6].strip()
+            if name in name_counts:
+                name_counts[name] += 1
+            else:
+                name_counts[name] = 1
+
+sorted_name_counts = sorted(name_counts.items(), key=lambda x: x[1], reverse=True)
+for name, count in sorted_name_counts:
+    print(f"Name: {name} - Count: {count}")
